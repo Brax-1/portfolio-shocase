@@ -1,0 +1,740 @@
+@import "utilities.css";
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -webkit-font-smotthing: antialiased;
+}
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #fff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+  --secondary: linear-gradient(#404040, #151415);
+}
+
+
+
+/* -------------------------------Breaker----------------------------- */
+
+.breaker {
+  position: fixed;
+  width: 0%;
+  height: 2%;
+  z-index: 500;
+  top: 50%;
+  transition: 1s;
+  animation: breakr 2s;
+  background: linear-gradient(#404040, #151415);
+}
+
+@keyframes breakr {
+  0% {
+    opacity: 1;
+    width: 100%;
+    top: 0%;
+    height: 100%;
+  }
+  50% {
+    width: 100%;
+    top: 50%;
+    height: 2%;
+  }
+  100% {
+    width: 0%;
+    top: 50%;
+    height: 2%;
+
+    opacity: 1;
+  }
+}
+
+/* -------------------------------End Breaker----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Navigation bar----------------------------- */
+header {
+  background: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+header nav .left a {
+  text-decoration: none;
+  color: var(--pure);
+}
+header nav {
+  padding: 2rem 0;
+
+  font-weight: 300;
+}
+.containerN {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+header nav a {
+  font-family: "Acme", sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 10px 10px;
+  line-height: 0px;
+  transition: all 0.3s;
+}
+header nav a:hover {
+  color: var(--primary);
+}
+header nav .branding {
+  margin-right: 3rem;
+}
+header nav .branding img {
+  width: 55px;
+  height: 60px;
+}
+
+.right {
+  width: 200px;
+  height: 40px;
+}
+.right button {
+  font-family: "Acme", sans-serif;
+  font-weight: 600;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary);
+  border-radius: 2px;
+  color: var(--primary);
+  transition: all 0.3s;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.right button:hover {
+  background: var(--primary);
+  color: black;
+  transform: scale(0.95);
+}
+
+/* -------------------------------End Navigation bar----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Hero Section----------------------------- */
+.hero {
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.hero .lef img {
+  width: 300px;
+}
+.hero .righ {
+  color: var(--pure);
+  font-family: "Acme", sans-serif;
+  font-weight: 800;
+  margin-top: -7rem;
+}
+.hero .righ h1 {
+  color: var(--pure);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero .righ h1 span {
+  color: var(--primary);
+}
+.hero .righ h6 {
+  color: var(--primary);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.hero .righ p {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.righ button {
+  font-family: "Acme", sans-serif;
+  font-weight: 600;
+  background: transparent;
+  width: 150px;
+  height: 40px;
+  border: 2px solid var(--primary);
+  border-radius: 2px;
+  color: var(--primary);
+  transition: all 0.3s;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.righ button:hover {
+  background: var(--primary);
+  color: black;
+  transform: scale(0.95);
+}
+
+/* -------------------------------End Hero Section----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Career Objective----------------------------- */
+
+.containerA {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+}
+.abouttext {
+  font-family: "Poppins", sans-serif;
+}
+.abouttext h1 {
+  color: var(--primary);
+  margin-top: 80px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.abouttext p {
+  color: var(--dark);
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+}
+
+.containerC {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Acme", sans-serif;
+}
+.containerC .box {
+  position: relative;
+  width: 275px;
+  height: 375px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.containerC .box:hover {
+  z-index: 1;
+  transform: scale(1.05);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.containerC .box .imgBx {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.containerC .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(45deg, #ff00ea, #22007e);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+.containerC .box:hover .imgBx:before {
+  opacity: 1;
+}
+.containerC .box .imgBx img {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerC .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+.containerC .box .content h2 {
+  color: white;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+}
+
+.containerC .box:hover .content h2 {
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.containerC .box .content p {
+  color: white;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 10px;
+  transform: translateY(200px);
+}
+
+.containerC .box:hover .content p {
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+/* -------------------------------End Career Objective----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Qualification----------------------------- */
+
+.section-heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+
+  line-height: 0.5;
+  font-family: "Poppins", sans-serif;
+}
+.section-heading span {
+  color: var(--primary);
+}
+.section-heading + p {
+  color: var(--ternary);
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+section.services .container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+section.services {
+  background: var(--light);
+
+  padding: 50px 0;
+  padding-bottom: 50px;
+  margin-top: -50px;
+  font-family: "Poppins", sans-serif;
+}
+section.services .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 5rem;
+}
+section.services .card {
+  background: var(--pure);
+
+  padding: 2.5rem 2rem;
+  position: relative;
+  padding-top: 6rem;
+  text-align: center;
+  transition: all 0.5s esae;
+}
+section.services .card img {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  transform: translateX(-50%);
+  transition: all 0.5s ease;
+  transform-origin: left;
+}
+section.services .card h2 {
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+section.services .card p {
+  font-weight: 500;
+}
+section.services .card:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, var(--light), var(--primary));
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+.overcard:hover .card:before {
+  opacity: 1;
+}
+.overcard:hover .card img {
+  width: 120px;
+  height: 120px;
+}
+/* -------------------------------End Qualification----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Languages----------------------------- */
+
+.languages {
+  width: 100%;
+  justify-content: center;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  position: relative;
+  width: 1090px;
+  display: flex;
+  font-family: "Acme", sans-serif;
+
+  z-index: 1;
+  flex-direction: column;
+}
+.main .text {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -60px;
+}
+.main .text span {
+  color: var(--primary);
+}
+.languages .container {
+  box-shadow: 0 0 10px grey;
+  transform: translateX(-3%);
+  width: 1500px;
+  display: flex;
+  font-family: "Acme", sans-serif;
+  background: white;
+  justify-content: center;
+  z-index: 1;
+}
+.languages .container .box {
+  position: relative;
+  width: 375px;
+  height: 225px;
+  overflow: hidden;
+  margin: 10px 5px;
+  transition: 0.5s;
+}
+.languages .container .box:hover {
+  z-index: 1;
+  transform: scale(1.15);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.languages .container .box .imgBx {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.languages .container .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(45deg, #ff00ea, #581df8);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+.languages .container .box:hover .imgBx:before {
+  opacity: 1;
+}
+.languages .container .box .imgBx img {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.languages .container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+.languages .container .box .content h2 {
+  color: white;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+}
+
+.languages .container .box:hover .content h2 {
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.languages .container .box .content p {
+  color: white;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 10px;
+  transform: translateY(200px);
+}
+
+.languages .container .box:hover .content p {
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+/* -------------------------------End languages----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Free Lancer----------------------------- */
+
+.freelancer button {
+  font-family: "Acme", sans-serif;
+  font-weight: 600;
+  background: transparent;
+  width: 150px;
+  height: 40px;
+  border: 2px solid var(--primary);
+  border-radius: 2px;
+  color: var(--primary);
+  transition: all 0.3s;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.freelancer button:hover {
+  background: var(--primary);
+  color: black;
+  transform: scale(0.95);
+}
+section.freelancer {
+  text-align: center;
+  padding: 100px 0;
+  padding-bottom: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/camera.png);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%);
+}
+.freelancer p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+.freelancer h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+/* -------------------------------End Freelancer----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Our teams----------------------------- */
+.review .container .teamscard{
+  width:100% ;
+  display: flex;
+  flex-direction: row;
+ 
+  z-index: 1;
+  justify-content: center;
+}
+
+.review .container .teamscard .card {
+  position: relative;
+  height: 400px;
+  width: 250px;
+  overflow: hidden;
+  margin: 20px 40px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.review .container .teamscard .header {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #444;
+  z-index: 1;
+}
+.review .container .teamscard .header img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.review .container .teamscard .header h2 {
+  color: white;
+  margin-top: 160px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+.review .container .teamscard .icon {
+  position: absolute;
+  top: 52%;
+  height: 100px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.review .container .teamscard .icon .link {
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background: rgb(39, 39, 39);
+  border-radius: 50%;
+  margin: 7px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.review .container .teamscard .icon .link:hover {
+  transform: scale(1.05);
+}
+.review .container .teamscard .more {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.review .container .teamscard .more a {
+  text-decoration: none;
+  padding: 4px 20px;
+  border: 2px solid #3dcfd3;
+  border-radius: 3px;
+  color: #3dcfd3;
+  font-family: "Acme", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.review .container .teamscard .more:hover a {
+  background: #3dcfd3;
+  color: white;
+  transform: scale(0.95);
+}
+.review .container .teamscard .wave-container{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 0%;
+}
+.review .container .teamscard .wave{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    opacity: 0.6;
+    border-radius: 40%;
+    left: -200px;
+    top: -112%;
+    background: linear-gradient(#353535,#383737);
+    animation: wave 6s infinite linear;
+}
+@keyframes wave{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.review .container .teamscard .wave-:nth-child(2){
+    animation-delay: 0.3s;
+  
+}
+.review .container .teamscard .wave:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.review{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.review .container{
+  text-align: center;
+}
+.review .container h1{
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.review .container h1 span{
+  color: var(--primary);
+}
+.review .container p{
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.review .container .slider p{
+  font-family: "Acme", sans-serif;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
