@@ -2,10 +2,17 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
   -webkit-font-smotthing: antialiased;
 }
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(18, 22, 33) url(../images/preloader2.gif) no-repeat center;
+  z-index: 9999;
+}
+
 :root {
   --primary: #3dcfd3;
   --dark: #161616;
@@ -15,41 +22,7 @@
   --secondary: linear-gradient(#404040, #151415);
 }
 
-
-
 /* -------------------------------Breaker----------------------------- */
-
-.breaker {
-  position: fixed;
-  width: 0%;
-  height: 2%;
-  z-index: 500;
-  top: 50%;
-  transition: 1s;
-  animation: breakr 2s;
-  background: linear-gradient(#404040, #151415);
-}
-
-@keyframes breakr {
-  0% {
-    opacity: 1;
-    width: 100%;
-    top: 0%;
-    height: 100%;
-  }
-  50% {
-    width: 100%;
-    top: 50%;
-    height: 2%;
-  }
-  100% {
-    width: 0%;
-    top: 50%;
-    height: 2%;
-
-    opacity: 1;
-  }
-}
 
 /* -------------------------------End Breaker----------------------------- */
 
@@ -310,7 +283,7 @@ header nav .branding img {
 
 /* ===================================================================================================== */
 
-/* -------------------------------Qualification----------------------------- */
+/* -------------------------------Skill Section----------------------------- */
 
 .section-heading {
   color: var(--secondary);
@@ -551,14 +524,14 @@ section.services .card:before {
 }
 section.freelancer {
   text-align: center;
-  padding: 100px 0;
-  padding-bottom: 150px;
+  padding: 50px 0;
+  padding-bottom: 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/camera.png);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 78%, 0 100%);
 }
 .freelancer p {
-  color: white;
+  color: var(--ternary);
   font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
 }
@@ -574,11 +547,11 @@ section.freelancer {
 /* ===================================================================================================== */
 
 /* -------------------------------Our teams----------------------------- */
-.review .container .teamscard{
-  width:100% ;
+.review .container .teamscard {
+  width: 100%;
   display: flex;
   flex-direction: row;
- 
+
   z-index: 1;
   justify-content: center;
 }
@@ -666,68 +639,392 @@ section.freelancer {
   color: white;
   transform: scale(0.95);
 }
-.review .container .teamscard .wave-container{
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    top: 0%;
+.review .container .teamscard .wave-container {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 0%;
 }
-.review .container .teamscard .wave{
-    position: absolute;
-    height: 600px;
-    width: 600px;
-    opacity: 0.6;
-    border-radius: 40%;
-    left: -200px;
-    top: -112%;
-    background: linear-gradient(#353535,#383737);
-    animation: wave 6s infinite linear;
+.review .container .teamscard .wave {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  opacity: 0.6;
+  border-radius: 40%;
+  left: -200px;
+  top: -112%;
+  background: linear-gradient(#353535, #383737);
+  animation: wave 6s infinite linear;
 }
-@keyframes wave{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-.review .container .teamscard .wave-:nth-child(2){
-    animation-delay: 0.3s;
-  
-}
-.review .container .teamscard .wave:nth-child(3){
-    animation-delay: 0.5s;
+@keyframes wave {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.review{
+.review .container .teamscard .wave-:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.review .container .teamscard .wave:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.review {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.review .container{
+.review .container {
   text-align: center;
 }
-.review .container h1{
+.review .container h1 {
   color: black;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 30px;
   text-transform: uppercase;
 }
-.review .container h1 span{
+.review .container h1 span {
   color: var(--primary);
 }
-.review .container p{
-  color: black;
-  font-family: "Poppins", sans-serif;
+.review .container p {
+  color: var(--ternary);
+  font-family: "Fira Sans", sans-serif;
   font-weight: 500;
   font-size: 10px;
   text-transform: uppercase;
 }
-.review .container .slider p{
+.review .container .slider p {
   font-family: "Acme", sans-serif;
   font-size: 15px;
+}
+/* -------------------------------End Our team----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Personal summary----------------------------- */
+
+section.personalsummmary {
+  width: 100%;
+
+  color: Black;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section.personalsummmary .heading {
+  margin-top: 30px;
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+section.personalsummmary .heading span {
+  color: var(--primary);
+}
+section.personalsummmary .subheading {
+  color: var(--ternary);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+section.personalsummmary .text {
+  width: 70%;
+  text-align: center;
+}
+
+/* -------------------------------End Personal summary----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Projects----------------------------- */
+
+.myprojectdetail {
+  position: relative;
+  background: #e1e9e9;
+  justify-content: center;
+  padding-top: 25px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+.myprojectdetail .undermyprojectdetail {
+  font-size: 13px;
+  color: var(--ternary);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.myprojectdetail .myproject {
+  color: #62dfb5;
+  line-height: 1;
+  padding-bottom: 5;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  z-index: 20;
+}
+.myprojectdetail .myproject span {
+  color: var(--primary);
+}
+.project .container {
+  height: 450px;
+  width: 350px;
+  overflow: hidden;
+  padding-top: 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  background: linear-gradient(45deg, #ff00ea, #73007e);
+  text-align: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.project .container .wrapper img {
+  z-index: 20;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 5px solid #fff;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.project .wrapper img.active {
+  height: 470px;
+  width: 350px;
+  margin: 0px auto;
+  justify-content: start;
+  border: none;
+  border-radius: 5px;
+}
+.project .wrapper .title {
+  font-family: "Acme", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 10px;
+  line-height: 25px;
+}
+.project .wrapper .place {
+  font-family: "Acme", sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0;
+  line-height: 0px;
+}
+
+.project .content {
+  font-family: "Acme", sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 1px 20px 10px 20px !important;
+}
+.project .content .button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.project .button .btn {
+  height: 30px;
+  width: 100%;
+  margin: 0 5px;
+}
+.project .button .btn button {
+  height: 100%;
+  width: 100%;
+  font-family: "Acme", sans-serif;
+  background: white;
+  border: 2px solid white;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.project .btn button:hover {
+  transform: scale(0.95);
+}
+
+/* -------------------------------End Project----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Education Qualification----------------------------- */
+
+section.education {
+  width: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+section.education .image {
+  background: url(../images/educationq.jpg);
+  width: 100%;
+  height: 400px;
+}
+section.education .image:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(#353535, #383737);
+
+  mix-blend-mode: multiply;
+  opacity: 1;
+  transition: 0.5s;
+}
+section.education .quote {
+  font-size: 45px;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  justify-content: center;
+}
+section.education .quote span {
+  color: var(--primary);
+}
+
+.edu {
+  margin-top: -100px;
+}
+
+.edu .review .container .teamscard .card {
+  height: 380px;
+  width: 300px;
+}
+.edu .review .container .teamscard .header {
+  width: 100%;
+  height: 290px;
+  background: linear-gradient(45deg, #235355, #008388);
+}
+.edu .review .container .teamscard .header .place {
+  font-family: "Acme", sans-serif;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.edu .review .container .teamscard .header h2 {
+  font-size: 25px;
+}
+.edu .review .container .teamscard .header img {
+  width: 140px;
+  height: 140px;
+
+  top: 10px;
+  left: 50%;
+}
+/* -------------------------------End Education Qualification----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------Contact Us----------------------------- */
+
+section.contact{
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section.contact .container p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+section.contact .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 0 300px;
+}
+section.contact .card-wrapper .card{
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+section.contact .card-wrapper .card .icon{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+section.contact .card-wrapper .card h1{
+  font-size: 15px;
+}
+section.contact .card-wrapper .card h6{
+  color: var(--ternary);
+}
+
+
+section.contact button{
+  font-family: "Acme", sans-serif;
+  font-weight: 600;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  width: 200px;
+  height: 40px;
+  border: 2px solid var(--primary);
+  border-radius: 2px;
+  color: var(--primary);
+  transition: all 0.3s;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+section.contact button:hover {
+  background: var(--primary);
+  color: black;
+  transform: scale(0.95);
+}
+
+section.contact form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.contact .input-wrap{
+  display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+section.contact .input-wrap-2{
+  display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+section.contact form input{
+  margin: 10px;
+  padding: 5px;
+}
+section.contact form textarea{
+  margin: 10px;
+  padding: 5px;
 }
 
 
@@ -738,3 +1035,85 @@ section.freelancer {
 
 
 
+/* -------------------------------End Contact Us----------------------------- */
+/* ===================================================================================================== */
+
+/* -------------------------------Footer----------------------------- */
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: var(--dark);
+  color: white;
+  font-family: "Acme", sans-serif;
+}
+footer spa {
+  color: var(--primary);
+}
+footer span {
+  color: var(--pure);
+}
+
+footer .copyright {
+  background: var(--dark);
+  text-align: center;
+  margin-top: 5px;
+  line-height: 3;
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+  text-align: center;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.left .content .social a span:hover {
+  background: #f12020;
+}
+footer .right input{
+  width: 70%;
+}
+footer .right textarea{
+  width: 70%;
+}
+footer .right button {
+  width: 50%;
+  height: 30px;
+}
+footer .right .email {
+  outline: none;
+}
+footer .center .fa-envelope-open-o{
+  margin-right: 10px;
+}
+
+/* -------------------------------End Footer----------------------------- */
+
+/* ===================================================================================================== */
+
+/* -------------------------------End----------------------------- */
