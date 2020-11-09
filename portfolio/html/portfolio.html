@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/portfolio.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap" rel="stylesheet">
 
@@ -13,27 +13,40 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Poppins&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="../css/portfolio.css">
+       
+    <link rel="stylesheet" href="../css/lightslider.css">
+    <script type="text/javascript" src="../javascripts/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="../javascripts/lightslider.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ 
+    
 </head>
 
 <body onload="loaders()">
     <div id="loader"></div>
-
-
+    <a href="#" class="backtop">
+    <img src="../images/screw.png" class="screw" alt="">
+    <img src="../images/up-arrow.png" class="upload" alt="">
+</a>
+<button class="hamb">
+    <span class="fas fa-hamburger"></span>
+</button>
     <header>
         <div class="containerN ">
             <!-- /* -------------------------------Navigation bar----------------------------- */ -->
 
-            <nav class="flex items-center justify-between">
+            <nav id="navi" class="flex items-center justify-between">
                 <div class="left flex items-center">
                     <div class="branding flex items-center"><img src="../images/hashtag.png" alt=""></div>
                     <div>
                         <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Blog</a>
+                        <a href="#about">About</a>
+                        <a href="#skill">Skills</a>
+                        <a href="#team">Team</a>
+                        <a href="#project">Projects</a>
+                        <a href="#edu">Education</a>
+                        <a href="#contact">Contact Us</a>
                     </div>
 
                 </div>
@@ -41,7 +54,7 @@
                     <button>Contact</button>
                 </div>
             </nav>
-
+      
 
             <!-- 
         /* -------------------------------End Navigation bar----------------------------- */
@@ -86,7 +99,7 @@
     <!-- 
      -->
 
-    <div class="containerA">
+    <div id="about" class="containerA">
 
         <div class="containerC flex-1">
             <div class="box">
@@ -131,7 +144,12 @@
     
     -->
 
-    <section class="services">
+
+
+
+    
+
+    <section id="Skill" class="services">
         <div class="container">
             <h1 class="section-heading"><span>Skills</span> Section</h1>
             <p>Keen in thinking new idea and Developing it</p>
@@ -292,12 +310,116 @@
     
     -->
 
-    <section class="review">
+    <section id="team" class="review">
         <div class="container">
             <h1><span>Our</span> Team</h1>
             <p>We provide high standard and clean website for your bussiness solutions</p>
-            <div class="teamscard">
-                <div class="card">
+            <div class="teamdetCon"> 
+            <ul id="autoWidth" class="cs-hidden teamsdet">
+		
+                <!------------------------------------------------------ -->
+                <li class="item-a">
+                    
+                    <section class="review">
+                        <div class="container">
+                            <div class="teamscard">
+                                <div class="card">
+                                    <div class="header">
+                                        <img src="../images/me2.jpg" alt="">
+                                        <h2>SUSHIL KUMAR</h2>
+                                    </div>
+                                    <div class="wave-container">
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
+                                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
+                                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
+                
+                                    </div>
+                                    <div class="more">
+                                        <a href="#">PORTFOLIO</a>
+                                    </div>
+                                </div>
+                                
+                
+                        </div></div>
+                    </section>
+                </li>
+        
+                <!------------------------------------------------------ -->
+                <li class="item-b">
+                    
+                    <section class="review">
+                        <div class="container">
+                            <div class="teamscard">
+                                <div class="card">
+                                    <div class="header">
+                                        <img src="../images/meel.jpg" alt="">
+                                        <h2>ABHISHEK</h2>
+                                    </div>
+                                    <div class="wave-container">
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
+                                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
+                                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
+                
+                                    </div>
+                                    <div class="more">
+                                        <a href="#">PORTFOLIO</a>
+                                    </div>
+                                </div>
+                                
+                
+                        </div></div>
+                    </section>
+                </li>
+        
+                <!------------------------------------------------------ -->
+                <li class="item-c">
+                    
+                    <section class="review">
+                        <div class="container">
+                            <div class="teamscard">
+                                <div class="card">
+                                    <div class="header">
+                                        <img src="../images/pry3.jpg" alt="">
+                                        <h2>PRIYA</h2>
+                                    </div>
+                                    <div class="wave-container">
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
+                                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
+                                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
+                
+                                    </div>
+                                    <div class="more">
+                                        <a href="#">PORTFOLIO</a>
+                                    </div>
+                                </div>
+                                
+                
+                        </div></div>
+                    </section>
+                </li>
+                <!------------------------------------------------------ -->
+               
+                
+              </ul>
+            </div>
+            <div class="gret900">
+              <div class="teamscard">
+                <div class="card cardt">
                     <div class="header">
                         <img src="../images/me2.jpg" alt="">
                         <h2>SUSHIL KUMAR</h2>
@@ -317,7 +439,7 @@
                         <a href="#">PORTFOLIO</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card cardt">
                     <div class="header">
                         <img src="../images/meel.jpg" alt="">
                         <h2>ABHISHEK MEEL</h2>
@@ -337,7 +459,7 @@
                         <a href="#">PORTFOLIO</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card cardt">
                     <div class="header">
                         <img src="../images/pry3.jpg" alt="">
                         <h2>PRIYA KUMARI</h2>
@@ -358,6 +480,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
         </div>
     </section>
@@ -410,13 +533,13 @@
 
 
 
-
-
-    <section class="myprojectdetail">
+    <section id="project" class="myprojectdetail">
 
 
         <div class="myproject"><span>MY </span>PROJECT</div>
         <div class="undermyprojectdetail">Think , Explore and Create </div>
+        
+        
 
         <div class="project">
 
@@ -507,12 +630,39 @@
 
         /* ===================================================================================================== */
         
+        /* -------------------------------Problem-solving----------------------------- */
+    
+    
+    -->
+    
+
+
+
+    <section class="counter-wrapper">
+        <div>
+            <div>
+                
+<i class='fab fa-hackerrank'></i>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+    </section>
+
+
+
+        <!-- 
+        /* -------------------------------End Problem-solving----------------------------- */
+
+
+        /* ===================================================================================================== */
+        
         /* -------------------------------Qualification----------------------------- */
     
     
     -->
 
-    <section class="education">
+    <section id="edu" class="education">
         <div class="image">
             <div class="quote">PEICE OF PAPER DOESN'T DECIDE <span>FUTURE</span></div>
         </div>
@@ -576,7 +726,7 @@
     
     -->
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h1 class="section-heading">Contact <span>Us</span></h1>
             <p>We provide high standard clean website for your company</p>
@@ -584,17 +734,17 @@
         </div>
         <div class="card-wrapper">
             <div class="card">
-                <i class="material-icons icon">phone_android</i>
+                <span class="fas fa-mobile-alt"></span>
                 <h1>Call Us On</h1>
                 <h6>+985 123 7856</h6>
             </div>
             <div class="card">
-                <span class="fa fa-envelope icon"></span>
+                <span class="fa fa-envelope"></span>
                 <h1>Email Us At</h1>
                 <h6>support@companyname.com</h6>
             </div>
             <div class="card">
-                <i class="material-icons icon">map</i>
+                <span class="fas fa-map-marker-alt"></span>
                 <h1>Visit Address</h1>
                 <h6>#107/12 Od Complex,Mathura Cantt</h6>
             </div>
@@ -639,10 +789,10 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam repellendus suscipit
                         consequuntur veniam at dolorum asperiores eaque facilis.</p>
                     <div class="social">
-                        <a href="#"><span class="fa fa-facebook-f"></span></a>
-                        <a href="#"><span class="fa fa-instagram"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                        <a href="#"><span class="fa fa-github"></span></a>
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                        <a href="#"><span class="fab fa-github"></span></a>
                     </div>
                 </div>
             </div>
@@ -651,15 +801,15 @@
                 <h2>Address</h2>
                 <div class="content">
                     <div class="place text">
-                        <i class="material-icons">place</i>
+                        <span class="fas fa-map-marker-alt"></span>
                         <span class="text"> #107/12 Od Complex,Mathura Cantt</span>
                     </div>
                     <div class="phone text">
-                        <i class="material-icons">phone_android</i>
+                        <span class="fas fa-mobile-alt"></span>
                         <span class="text"> +91-8053675048</span>
                     </div>
                     <div class="email text">
-                        <span class="fa fa-envelope-open-o"></span>
+                        <span class="fas fa-envelope-open"></span>
                         <span class="text"> ay701548@gmail.com</span>
                     </div>
                 </div>
@@ -704,19 +854,16 @@
     -->
 
 
-
+    <script type="text/javascript" src="../javascripts/script.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script type="text/javascript" src="../javascripts/portfolio.js"></script>
     <script>
         var preloader = document.getElementById("loader");
 
         setTimeout(function loaders() {
             preloader.style.display = "none";
-        }, 4000
+        }, 500
         )
 
 
@@ -743,6 +890,9 @@
             img3.classList.toggle("active");
         }
     </script>
+
+
+
 </body>
 
 </html>
