@@ -335,7 +335,19 @@ header {
 }
 .sci li {
   list-style: none;
+  
 }
+.sci li:hover{
+  transform: scale(1.05);
+
+}
+.sci li img{
+  width: 50px;
+  padding: 3px;
+  background: white;
+  border-radius: 50%;
+}
+
 .sci.active {
   transform: scale(0);
   transform-origin: center;
@@ -348,8 +360,19 @@ header {
 .sci li a {
   display: inline-block;
   margin-right: 20px;
-  filter: invert(1);
+
   transform: scale(0.6);
+}
+@media (max-width: 500px) {
+  .text a {
+    font-size: 10px;
+    padding: 5px 30px;
+    
+}
+.head {
+  color: white;
+  font-size: 40px;
+}
 }
 
 @media (max-width: 700px) {
@@ -444,6 +467,9 @@ header {
     text-align: center;
     animation: rock 0.1s ease infinite;
   }
+  .rocket::before {
+    top: 3%;
+  }
 
   header {
     padding: 20px 40px;
@@ -472,7 +498,7 @@ header {
 @media (max-width: 600px) {
   .head {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
   }
   
 }

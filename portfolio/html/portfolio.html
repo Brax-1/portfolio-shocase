@@ -5,33 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Poppins&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="../css/portfolio.css">
-       
+    <link rel="stylesheet" href="../css/portfolio.css">
+
     <link rel="stylesheet" href="../css/lightslider.css">
     <script type="text/javascript" src="../javascripts/JQuery3.3.1.js"></script>
     <script type="text/javascript" src="../javascripts/lightslider.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
- 
-    
+
+
 </head>
 
 <body onload="loaders()">
     <div id="loader"></div>
+    <div class="breaker"></div>
     <a href="#" class="backtop">
-    <img src="../images/screw.png" class="screw" alt="">
-    <img src="../images/up-arrow.png" class="upload" alt="">
-</a>
-<button class="hamb">
-    <span class="fas fa-hamburger"></span>
-</button>
+        <img src="../images/screw.png" class="screw" alt="">
+        <img src="../images/up.png" class="upload" alt="">
+    </a>
+
+    <button onclick="toggle()" class="hamb">
+        <span class="fas fa-hamburger"></span>
+    </button>
+
+    <div class="hamnavi">
+       <div class="navel">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skill">Skills</a>
+                <a href="#project">Projects</a>
+                <a href="#edu">Education</a>
+                <a href="#contact">Contact Us</a>
+        </div>
+       
+        
+            <a href="first.html"> <button>Intro</button></a>
+        
+    </div>
+
+
     <header>
         <div class="containerN ">
             <!-- /* -------------------------------Navigation bar----------------------------- */ -->
@@ -43,7 +60,6 @@
                         <a href="#">Home</a>
                         <a href="#about">About</a>
                         <a href="#skill">Skills</a>
-                        <a href="#team">Team</a>
                         <a href="#project">Projects</a>
                         <a href="#edu">Education</a>
                         <a href="#contact">Contact Us</a>
@@ -51,10 +67,10 @@
 
                 </div>
                 <div class="right">
-                    <button>Contact</button>
+                    <a href="first.html"> <button>Intro</button></a>
                 </div>
             </nav>
-      
+
 
             <!-- 
         /* -------------------------------End Navigation bar----------------------------- */
@@ -65,15 +81,15 @@
         /* -------------------------------Hero Section----------------------------- */ -->
 
             <div class="hero flex items-center justify-between">
-                <div class="lef flex-1 flex justify-center"><img src="../images/man.png" alt=""></div>
+
+                <div class="lef flex-1 flex justify-center"><img src="../images/IronMan.png" alt=""></div>
+                <!-- <div class="headbreaker"></div> -->
                 <div class="righ flex-1 ">
-                    <h6>PORTFOLIO</h6>
+                    <!-- <h6>PORTFOLIO</h6> -->
                     <h1>No matter what<br><span> i will succeed</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ab perferendis tempore aut
                         omnis
-                        excepturi, ducimus dolor tenetur explicabo? Consequuntur dolorem sunt neque aut, molestias
-                        nesciunt
-                        molestiae. Earum, fugiat.</p>
+                    </p>
                     <div>
                         <button>Download CV</button>
                     </div>
@@ -147,9 +163,9 @@
 
 
 
-    
 
-    <section id="Skill" class="services">
+
+    <section id="skill" class="services">
         <div class="container">
             <h1 class="section-heading"><span>Skills</span> Section</h1>
             <p>Keen in thinking new idea and Developing it</p>
@@ -220,78 +236,12 @@
 
 
         /* ===================================================================================================== */
-        
-        /* -------------------------------Languages----------------------------- */
-    
-    
-    -->
 
-    <!-- 
-    <section class="languages">
-        <div class="main">
-            <div class="text">LEA<span>RN</span>ED</div>
-            <div class="container">
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="../images/codea.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h2>LANGUAGES</h2>
-                            <p>Battle ground mode in offline mode is far better than Online.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="../images/software.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h2>SOFTWARE</h2>
-                            <p>Something new creative from old , As Old is Gold.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="../images/Software-Platforms.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h2>PLATFORMS</h2>
-                            <p>Every thing starts from scratch and any applicaton breaks to code.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
-    <!-- 
-        /* -------------------------------End languages----------------------------- */
-
-
-        /* ===================================================================================================== */
         
         /* -------------------------------Free Lancer----------------------------- */
     
     
     -->
-
-
-    <!-- 
-        /* -------------------------------End Qualification----------------------------- */
-
-
-        /* ===================================================================================================== */
-        
-        /* -------------------------------Free Lancer----------------------------- */
-    
-    
-    -->
-
 
     <section class="freelancer">
         <h1>curious to learn and create</h1>
@@ -304,194 +254,7 @@
 
 
         /* ===================================================================================================== */
-        
-        /* -------------------------------Our teams----------------------------- */
-    
-    
-    -->
 
-    <section id="team" class="review">
-        <div class="container">
-            <h1><span>Our</span> Team</h1>
-            <p>We provide high standard and clean website for your bussiness solutions</p>
-            <div class="teamdetCon"> 
-            <ul id="autoWidth" class="cs-hidden teamsdet">
-		
-                <!------------------------------------------------------ -->
-                <li class="item-a">
-                    
-                    <section class="review">
-                        <div class="container">
-                            <div class="teamscard">
-                                <div class="card">
-                                    <div class="header">
-                                        <img src="../images/me2.jpg" alt="">
-                                        <h2>SUSHIL KUMAR</h2>
-                                    </div>
-                                    <div class="wave-container">
-                                        <div class="wave"></div>
-                                        <div class="wave"></div>
-                                        <div class="wave"></div>
-                                    </div>
-                                    <div class="icon">
-                                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
-                                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
-                                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
-                
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">PORTFOLIO</a>
-                                    </div>
-                                </div>
-                                
-                
-                        </div></div>
-                    </section>
-                </li>
-        
-                <!------------------------------------------------------ -->
-                <li class="item-b">
-                    
-                    <section class="review">
-                        <div class="container">
-                            <div class="teamscard">
-                                <div class="card">
-                                    <div class="header">
-                                        <img src="../images/meel.jpg" alt="">
-                                        <h2>ABHISHEK</h2>
-                                    </div>
-                                    <div class="wave-container">
-                                        <div class="wave"></div>
-                                        <div class="wave"></div>
-                                        <div class="wave"></div>
-                                    </div>
-                                    <div class="icon">
-                                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
-                                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
-                                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
-                
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">PORTFOLIO</a>
-                                    </div>
-                                </div>
-                                
-                
-                        </div></div>
-                    </section>
-                </li>
-        
-                <!------------------------------------------------------ -->
-                <li class="item-c">
-                    
-                    <section class="review">
-                        <div class="container">
-                            <div class="teamscard">
-                                <div class="card">
-                                    <div class="header">
-                                        <img src="../images/pry3.jpg" alt="">
-                                        <h2>PRIYA</h2>
-                                    </div>
-                                    <div class="wave-container">
-                                        <div class="wave"></div>
-                                        <div class="wave"></div>
-                                        <div class="wave"></div>
-                                    </div>
-                                    <div class="icon">
-                                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
-                                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
-                                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
-                
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">PORTFOLIO</a>
-                                    </div>
-                                </div>
-                                
-                
-                        </div></div>
-                    </section>
-                </li>
-                <!------------------------------------------------------ -->
-               
-                
-              </ul>
-            </div>
-            <div class="gret900">
-              <div class="teamscard">
-                <div class="card cardt">
-                    <div class="header">
-                        <img src="../images/me2.jpg" alt="">
-                        <h2>SUSHIL KUMAR</h2>
-                    </div>
-                    <div class="wave-container">
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                    </div>
-                    <div class="icon">
-                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
-                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
-                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
-
-                    </div>
-                    <div class="more">
-                        <a href="#">PORTFOLIO</a>
-                    </div>
-                </div>
-                <div class="card cardt">
-                    <div class="header">
-                        <img src="../images/meel.jpg" alt="">
-                        <h2>ABHISHEK MEEL</h2>
-                    </div>
-                    <div class="wave-container">
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                    </div>
-                    <div class="icon">
-                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
-                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
-                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
-
-                    </div>
-                    <div class="more">
-                        <a href="#">PORTFOLIO</a>
-                    </div>
-                </div>
-                <div class="card cardt">
-                    <div class="header">
-                        <img src="../images/pry3.jpg" alt="">
-                        <h2>PRIYA KUMARI</h2>
-                    </div>
-                    <div class="wave-container">
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                    </div>
-                    <div class="icon">
-                        <a href="#"><img class="link" src="../images/facebook.png" alt=""></i></a>
-                        <a href="#"><img class="link" src="../images/twitter.png" alt=""></i></a>
-                        <a href="#"><img class="link" src="../images/instagram.png" alt=""></i></a>
-
-                    </div>
-                    <div class="more">
-                        <a href="#">PORTFOLIO</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- 
-        /* -------------------------------End Our team----------------------------- */
-
-
-        /* ===================================================================================================== */
         
         /* -------------------------------Personal summary----------------------------- */
     
@@ -533,95 +296,220 @@
 
 
 
+
     <section id="project" class="myprojectdetail">
 
 
         <div class="myproject"><span>MY </span>PROJECT</div>
         <div class="undermyprojectdetail">Think , Explore and Create </div>
-        
-        
 
-        <div class="project">
+        <div class="teamdetCon">
+            <ul id="autoWidth" class="cs-hidden teamsdet">
 
-            <div class="container">
-                <div class="container1">
-                    <div class="wrapper">
-                        <a>
-                            <img onclick="imgt1()" class="1" src="../images/back1.png" alt="">
-                        </a>
+                <!------------------------------------------------------ -->
+                <li class="item-a">
 
-                        <div class="title">HBUB</div>
-                        <div class="place">( Helion Beast Unkown Battleground )</div>
+                    <section id="project" class="myprojectdetail">
+                        <div class="project">
 
-                    </div>
-                    <div class="content">
-                        <p>Developed in Unreal engine for fun and enjoyment. </p>
-                        <div class="button">
-                            <div class="btn">
-                                <button>Get Link</button>
+                            <div class="container">
+                                <div class="container1">
+                                    <div class="wrapper">
+                                        <a>
+                                            <img onclick="imgt1()" class="1" src="../images/back1.png" alt="">
+                                        </a>
+
+                                        <div class="title">HBUB</div>
+                                        <div class="place">( Helion Beast Unkown Battleground )</div>
+
+                                    </div>
+                                    <div class="content">
+                                        <p>Developed in Unreal engine for fun and enjoyment. </p>
+                                        <div class="button">
+                                            <div class="btn">
+                                                <button>Get Link</button>
+
+                                            </div>
+                                            <div class="btn">
+                                                <button>Webpage</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+                </li>
+
+                <!------------------------------------------------------ -->
+                <li class="item-b">
+
+                    <section id="project" class="myprojectdetail">
+                        <div class="project">
+
+                            <div class="container">
+                                <div class="container2">
+                                    <div class="wrapper">
+                                        <a>
+                                            <img class="2" onclick="imgt2()" src="../images/mario.PNG" alt="">
+                                        </a>
+
+                                        <div class="title">DICE MARIO</div>
+                                        <div class="place">( Pygame Module developed )</div>
+
+                                    </div>
+                                    <div class="content">
+                                        <p>Something new creative from old , As Old is Gold.</p>
+                                        <div class="button">
+                                            <div class="btn">
+                                                <button>Get Link</button>
+
+                                            </div>
+                                            <div class="btn">
+                                                <button>Webpage</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+                </li>
+
+                <!------------------------------------------------------ -->
+                <li class="item-c">
+
+                    <section id="project" class="myprojectdetail">
+                        <div class="project">
+
+
+
+                            <div class="container">
+                                <div class="container3">
+                                    <div class="wrapper">
+                                        <a>
+                                            <img onclick="imgt3()" class="3" src="../images/tic.png" alt="">
+                                        </a>
+
+                                        <div class="title">Tic-Tac-Toe</div>
+                                        <div class="place">( Simple Python Algorithm )</div>
+
+                                    </div>
+                                    <div class="content">
+                                        <p>Every thing starts from scratch and any applicaton breaks to code.</p>
+                                        <div class="button">
+                                            <div class="btn">
+                                                <button>Get Link</button>
+
+                                            </div>
+                                            <div class="btn">
+                                                <button>Webpage</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <!------------------------------------------------------ -->
+
+
+            </ul>
+        </div>
+
+        <div class="gret900">
+
+            <section id="project" class="myprojectdetail">
+                <div class="project">
+
+                    <div class="container">
+                        <div class="container1">
+                            <div class="wrapper">
+                                <a>
+                                    <img onclick="imgt12()" class="4" src="../images/back1.png" alt="">
+                                </a>
+
+                                <div class="title">HBUB</div>
+                                <div class="place">( Helion Beast Unkown Battleground )</div>
 
                             </div>
-                            <div class="btn">
-                                <button>Webpage</button>
+                            <div class="content">
+                                <p>Developed in Unreal engine for fun and enjoyment. </p>
+                                <div class="button">
+                                    <div class="btn">
+                                        <button>Get Link</button>
+
+                                    </div>
+                                    <div class="btn">
+                                        <button>Webpage</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="container2">
+                            <div class="wrapper">
+                                <a>
+                                    <img class="5" onclick="imgt22()" src="../images/mario.PNG" alt="">
+                                </a>
+
+                                <div class="title">DICE MARIO</div>
+                                <div class="place">( Pygame Module developed )</div>
+
+                            </div>
+                            <div class="content">
+                                <p>Something new creative from old , As Old is Gold.</p>
+                                <div class="button">
+                                    <div class="btn">
+                                        <button>Get Link</button>
+
+                                    </div>
+                                    <div class="btn">
+                                        <button>Webpage</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="container3">
+                            <div class="wrapper">
+                                <a>
+                                    <img onclick="imgt32()" class="6" src="../images/tic.png" alt="">
+                                </a>
+
+                                <div class="title">Tic-Tac-Toe</div>
+                                <div class="place">( Simple Python Algorithm )</div>
+
+                            </div>
+                            <div class="content">
+                                <p>Every thing starts from scratch and any applicaton breaks to code.</p>
+                                <div class="button">
+                                    <div class="btn">
+                                        <button>Get Link</button>
+
+                                    </div>
+                                    <div class="btn">
+                                        <button>Webpage</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="container">
-                <div class="container2">
-                    <div class="wrapper">
-                        <a>
-                            <img class="2" onclick="imgt2()" src="../images/mario.PNG" alt="">
-                        </a>
-
-                        <div class="title">DICE MARIO</div>
-                        <div class="place">( Pygame Module developed )</div>
-
-                    </div>
-                    <div class="content">
-                        <p>Something new creative from old , As Old is Gold.</p>
-                        <div class="button">
-                            <div class="btn">
-                                <button>Get Link</button>
-
-                            </div>
-                            <div class="btn">
-                                <button>Webpage</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="container3">
-                    <div class="wrapper">
-                        <a>
-                            <img onclick="imgt3()" class="3" src="../images/tic.png" alt="">
-                        </a>
-
-                        <div class="title">Tic-Tac-Toe</div>
-                        <div class="place">( Simple Python Algorithm )</div>
-
-                    </div>
-                    <div class="content">
-                        <p>Every thing starts from scratch and any applicaton breaks to code.</p>
-                        <div class="button">
-                            <div class="btn">
-                                <button>Get Link</button>
-
-                            </div>
-                            <div class="btn">
-                                <button>Webpage</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+
 
 
     <!-- 
@@ -634,15 +522,15 @@
     
     
     -->
-    
+
 
 
 
     <section class="counter-wrapper">
         <div>
             <div>
-                
-<i class='fab fa-hackerrank'></i>
+
+                <i class='fab fa-hackerrank'></i>
             </div>
         </div>
         <div></div>
@@ -651,7 +539,7 @@
 
 
 
-        <!-- 
+    <!-- 
         /* -------------------------------End Problem-solving----------------------------- */
 
 
@@ -728,19 +616,19 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h1 class="section-heading">Contact <span>Us</span></h1>
+            <h1 class="section-heading">Contact <span>Detail</span></h1>
             <p>We provide high standard clean website for your company</p>
 
         </div>
         <div class="card-wrapper">
             <div class="card">
                 <span class="fas fa-mobile-alt"></span>
-                <h1>Call Us On</h1>
+                <h1>Call On</h1>
                 <h6>+985 123 7856</h6>
             </div>
             <div class="card">
                 <span class="fa fa-envelope"></span>
-                <h1>Email Us At</h1>
+                <h1>Email Me At</h1>
                 <h6>support@companyname.com</h6>
             </div>
             <div class="card">
@@ -749,7 +637,7 @@
                 <h6>#107/12 Od Complex,Mathura Cantt</h6>
             </div>
 
-          
+
 
         </div>
 
@@ -766,7 +654,7 @@
                 <button>Send Message</button>
             </div>
         </form>
- 
+
     </section>
 
 
@@ -783,7 +671,7 @@
     <footer>
         <div class="main-content">
             <div class="left box">
-                <h2>About <spa>Us</spa>
+                <h2>About <spa>Me</spa>
                 </h2>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam repellendus suscipit
@@ -817,7 +705,7 @@
 
             <div class="right box">
                 <h2>
-                    <spa>Contact</spa> Us
+                    <spa>Contact</spa> Detail
                 </h2>
                 <div class="content">
                     <form action="#">
@@ -855,22 +743,29 @@
 
 
     <script type="text/javascript" src="../javascripts/script.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 
     <script>
+        function toggle() {
+            const breaker = document.querySelector('.breaker');
+            breaker.classList.toggle('active')
+            const hamnavi = document.querySelector('.hamnavi');
+            hamnavi.classList.toggle('active')
+
+        };
+
         var preloader = document.getElementById("loader");
 
         setTimeout(function loaders() {
             preloader.style.display = "none";
-        }, 500
+        }, 4000
         )
 
 
     </script>
 
     <script>
-        const img1 = document.querySelector(".container1 .wrapper img");
+        const img1 = document.querySelector(".teamdetCon .container1 .wrapper img");
         function imgt1() {
             img1.classList.toggle("active");
         }
@@ -879,15 +774,36 @@
 
     </script>
     <script>
-        const img2 = document.querySelector(".container2 .wrapper img");
+        const img2 = document.querySelector(".teamdetCon .container2 .wrapper img");
         function imgt2() {
             img2.classList.toggle("active");
         }
     </script>
     <script>
-        const img3 = document.querySelector(".container3 .wrapper img");
+        const img3 = document.querySelector(".teamdetCon .container3 .wrapper img");
         function imgt3() {
             img3.classList.toggle("active");
+        }
+    </script>
+    <script>
+        const img12 = document.querySelector(".gret900 .container1 .wrapper img");
+        function imgt12() {
+            img12.classList.toggle("active");
+        }
+
+
+
+    </script>
+    <script>
+        const img22 = document.querySelector(".gret900 .container2 .wrapper img");
+        function imgt22() {
+            img22.classList.toggle("active");
+        }
+    </script>
+    <script>
+        const img32 = document.querySelector(".gret900 .container3 .wrapper img");
+        function imgt32() {
+            img32.classList.toggle("active");
         }
     </script>
 
