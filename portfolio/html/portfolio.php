@@ -192,8 +192,8 @@
 
 
     <section id="skill" class="services">
-        <div class="add"> <a href="skilladd.html"> <img src="../images/add.png" alt=""></a> </div>
-        <div class="remove"> <a href="skilldelete.html"> <img src="../images/remove.png" alt=""></a></div>
+        <div class="add"> <a href="skilladd.php"> <img src="../images/add.png" alt=""></a> </div>
+        <div class="remove"> <a href="skilldelete.php"> <img src="../images/remove.png" alt=""></a></div>
 
         <div class="container">
 

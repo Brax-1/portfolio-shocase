@@ -71,7 +71,7 @@
         pulse.classList.toggle('active')
         breaker.classList.toggle('active')
         setTimeout(() => {
-                        window.location.replace("portfolio.php");
+                        window.location.replace("html/portfolio.php");
 
                     }, 3000);
 
@@ -94,7 +94,7 @@
         pulse.classList.toggle('active')
         breaker.classList.toggle('active')
         setTimeout(() => {
-                        window.location.replace("portfolio.php");
+                        window.location.replace("html/portfolio.php");
 
                     }, 3000);
             }, 300000);
