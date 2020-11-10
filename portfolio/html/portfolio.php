@@ -22,6 +22,8 @@
 </head>
 
 <body onload="loaders()">
+
+
     <div id="loader"></div>
     <div class="breaker"></div>
     <a href="#" class="backtop">
@@ -34,18 +36,27 @@
     </button>
 
     <div class="hamnavi">
-       <div class="navel">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#skill">Skills</a>
-                <a href="#project">Projects</a>
-                <a href="#edu">Education</a>
-                <a href="#contact">Contact Us</a>
+        <div class="navel">
+            <a href="#">Home</a>
+
+
+
+            <!-- --------------------------redirecting to my details page---------------------------------- -->
+
+            <a href="mydetail.php">My Details</a>
+
+
+            <!-- ------------------------------------------------------------------------------------------- -->
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#edu">Education</a>
+            <a href="#contact">Contact Us</a>
         </div>
-       
-        
-            <a href="first.html"> <button>Intro</button></a>
-        
+
+
+        <a href="index.html"> <button>Intro</button></a>
+
     </div>
 
 
@@ -58,7 +69,14 @@
                     <div class="branding flex items-center"><img src="../images/hashtag.png" alt=""></div>
                     <div>
                         <a href="#">Home</a>
-                        <a href="#about">About</a>
+
+                        <!-- --------------------------redirecting to my details page---------------------------------- -->
+
+                        <a href="mydetail.php">My Details</a>
+
+
+                        <!-- ------------------------------------------------------------------------------------------- -->
+                        <a href="#about">Career Ob.</a>
                         <a href="#skill">Skills</a>
                         <a href="#project">Projects</a>
                         <a href="#edu">Education</a>
@@ -67,7 +85,7 @@
 
                 </div>
                 <div class="right">
-                    <a href="first.html"> <button>Intro</button></a>
+                    <a href="index.html"> <button>Intro</button></a>
                 </div>
             </nav>
 
@@ -83,9 +101,9 @@
             <div class="hero flex items-center justify-between">
 
                 <div class="lef flex-1 flex justify-center"><img src="../images/IronMan.png" alt=""></div>
-                <!-- <div class="headbreaker"></div> -->
+
                 <div class="righ flex-1 ">
-                    <!-- <h6>PORTFOLIO</h6> -->
+
                     <h1>No matter what<br><span> i will succeed</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ab perferendis tempore aut
                         omnis
@@ -160,75 +178,49 @@
     
     -->
 
+    <!-- ------------------------------------dynamically accessing the skills from data base----------------- -->
 
-
+    <?php
+                $conn = mysqli_connect("localhost","root","","portfolio") or die("Connection Failed");
+                $sql = "select * from skill";
+                $result = mysqli_query($conn,$sql) or die("query failed");
+                
+                   
+                ?>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
 
 
 
     <section id="skill" class="services">
+        <div class="add"> <a href="skilladd.html"> <img src="../images/add.png" alt=""></a> </div>
+        <div class="remove"> <a href="skilldelete.html"> <img src="../images/remove.png" alt=""></a></div>
+
         <div class="container">
+
             <h1 class="section-heading"><span>Skills</span> Section</h1>
             <p>Keen in thinking new idea and Developing it</p>
 
             <div class="card-wrapper">
+                <?php while($res = mysqli_fetch_assoc($result)){ ?>
                 <div class="overcard">
                     <div class="card">
-                        <img src="../images/unrealf.png" alt="">
-                        <h2>Unreal Engine</h2>
-                        <p>What better place to look than the quotes of famous designers? Ipsum dolor sit amet
-                            consectetur adipisicing elit</p>
-                    </div>
-                </div>
-                <div class="overcard">
-                    <div class="card">
-                        <img src="../images/web.png" alt="">
-                        <h2>Web Development</h2>
-                        <p>What better place to look than the quotes of famous designers? Ipsum dolor sit amet
-                            consectetur adipisicing elit</p>
-                    </div>
-                </div>
-                <div class="overcard">
-                    <div class="card">
+                        <img src="<?php echo $res['image'];?>" alt="">
 
-                        <img src="../images/cpp-file-format-symbol.png" alt="">
-                        <h2>C Plus Plus</h2>
-                        <p>What better place to look than the quotes of famous designers? Ipsum dolor sit amet
-                            consectetur adipisicing elit</p>
+                        <h2><?php echo $res['skills'];?></h2>
+                        <p><?php echo $res['desci'];?></p>
                     </div>
                 </div>
-                <div class="overcard">
-                    <div class="card">
+                <?php
+                    }
+                ?>
 
-                        <img src="../images/python.png" alt="">
-                        <h2>Python Programming</h2>
-                        <p>What better place to look than the quotes of famous designers? Ipsum dolor sit amet
-                            consectetur adipisicing elit</p>
-                    </div>
-                </div>
-                <div class="overcard">
-                    <div class="card">
-
-                        <img src="../images/vedio.png" alt="">
-                        <h2>Vedio Editting</h2>
-                        <p>What better place to look than the quotes of famous designers? Ipsum dolor sit amet
-                            consectetur adipisicing elit</p>
-                    </div>
-                </div>
-                <div class="overcard">
-                    <div class="card">
-
-                        <img src="../images/brush.png" alt="">
-                        <h2>Photoshop</h2>
-                        <p>What better place to look than the quotes of famous designers? Ipsum dolor sit amet
-                            consectetur adipisicing elit</p>
-                    </div>
-                </div>
 
 
             </div>
         </div>
 
     </section>
+
 
 
     <!-- 

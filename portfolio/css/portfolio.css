@@ -353,9 +353,7 @@ header nav .branding img {
 .hero .lef img {
   width: 400px;
 }
-.hero .lef {
 
-}
 
 .hero .righ {
   color: var(--pure);
@@ -556,6 +554,29 @@ section.services .container {
   max-width: 1152px;
   padding: 0 15px;
   margin: 0px auto;
+}
+section.services .remove{
+  position: absolute;
+  left: 20px;
+}
+section.services .remove img{
+  width: 50px;
+  transition: 0.3s;
+}
+section.services .remove:hover img{
+  transform: scale(1.05);
+}
+
+section.services .add{
+  position: absolute;
+  right: 20px;
+}
+section.services .add img{
+  width: 50px;
+  transition: 0.3s;
+}
+section.services .add:hover img{
+  transform: scale(1.05);
 }
 section.services {
   background: var(--light);
@@ -1626,6 +1647,13 @@ section.services {
 }
 .section-heading + p {
   margin-bottom: 4rem;
+}
+section.services .remove img{
+  width: 30px;
+}
+
+section.services .add img{
+  width: 30px;
 }
 }
 

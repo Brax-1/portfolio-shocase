@@ -467,9 +467,6 @@ header {
     text-align: center;
     animation: rock 0.1s ease infinite;
   }
-  .rocket::before {
-    top: 3%;
-  }
 
   header {
     padding: 20px 40px;
