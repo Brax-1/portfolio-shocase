@@ -21,10 +21,9 @@
 
 </head>
 
-<body onload="loaders()">
+<body>
 
 
-    <div id="loader"></div>
     <div class="breaker"></div>
     <a href="#" class="backtop">
         <img src="../images/screw.png" class="screw" alt="">
