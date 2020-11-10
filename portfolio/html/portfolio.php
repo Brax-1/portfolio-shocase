@@ -176,6 +176,13 @@
     
     
     -->
+    <?php
+                $conn = mysqli_connect("localhost","root","","portfolio") or die("Connection Failed");
+                $sql = "select * from skill";
+                $result = mysqli_query($conn,$sql) or die("query failed");
+                
+                   
+                ?>
 
     <!-- ------------------------------------dynamically accessing the skills from data base----------------- -->
 
@@ -195,14 +202,18 @@
 
             <div class="card-wrapper">
 
+            <?php while($res = mysqli_fetch_assoc($result)){ ?>
                 <div class="overcard">
                     <div class="card">
-                        <img src="dsv" alt="">
+                        <img src="<?php echo $res['image'];?>" alt="">
 
-                        <h2>sdvdsv</h2>
-                        <p>vsdvs</p>
+                        <h2><?php echo $res['skills'];?></h2>
+                        <p><?php echo $res['desci'];?></p>
                     </div>
                 </div>
+                <?php
+                    }
+                ?>
              
 
 
