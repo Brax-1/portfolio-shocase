@@ -7,11 +7,11 @@
     echo $sdesc;
     echo $simg;
 
-    $conn = mysqli_connect("localhost","root","","portfolio") or die("Connection failed");
+    $conn = mysqli_connect("remotemysql.com","MIgbqQ56pk","k4T02GvM0s","MIgbqQ56pk") or die("Connection failed");
     $sql = "insert into skill(skills,desci,image) value('{$stopic}','{$sdesc}','{$simg}');";
     $result = mysqli_query($conn,$sql) or die($sql);
     header("Location: skilladd.html");
- mysqli_close($conn);
+    mysqli_close($conn);
 
 ?>
 

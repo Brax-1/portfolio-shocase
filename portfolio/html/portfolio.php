@@ -177,7 +177,7 @@
     
     -->
     <?php
-                $conn = mysqli_connect("localhost","root","","portfolio") or die("Connection Failed");
+              $conn = mysqli_connect("remotemysql.com","MIgbqQ56pk","k4T02GvM0s","MIgbqQ56pk") or die("Connection failed");
                 $sql = "select * from skill";
                 $result = mysqli_query($conn,$sql) or die("query failed");
                 
