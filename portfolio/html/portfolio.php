@@ -179,13 +179,7 @@
 
     <!-- ------------------------------------dynamically accessing the skills from data base----------------- -->
 
-    <!-- <?php
-                $conn = mysqli_connect("localhost","root","","portfolio") or die("Connection Failed");
-                $sql = "select * from skill";
-                $result = mysqli_query($conn,$sql) or die("query failed");
-                
-                   
-                ?> -->
+
     <!-- ---------------------------------------------------------------------------------------------------- -->
 
 
@@ -200,15 +194,7 @@
             <p>Keen in thinking new idea and Developing it</p>
 
             <div class="card-wrapper">
-                <!-- <?php while($res = mysqli_fetch_assoc($result)){ ?> -->
-                <!-- <div class="overcard">
-                    <div class="card">
-                        <img src="<?php echo $res['image'];?>" alt="">
 
-                        <h2><?php echo $res['skills'];?></h2>
-                        <p><?php echo $res['desci'];?></p>
-                    </div>
-                </div> -->
                 <div class="overcard">
                     <div class="card">
                         <img src="dsv" alt="">
