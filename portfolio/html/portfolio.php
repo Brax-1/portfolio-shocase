@@ -55,7 +55,7 @@
         </div>
 
 
-        <a href="index.html"> <button>Intro</button></a>
+        <a href="../index.php"> <button>Intro</button></a>
 
     </div>
 
@@ -85,7 +85,7 @@
 
                 </div>
                 <div class="right">
-                    <a href="index.html"> <button>Intro</button></a>
+                    <a href="../index.php"> <button>Intro</button></a>
                 </div>
             </nav>
 

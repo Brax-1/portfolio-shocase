@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/first.css">
+    <link rel="stylesheet" href="css/first.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
@@ -14,13 +14,13 @@
 
     </header>
     <div class="imgak">
-    <img src="../images/finalimgAkash.png" class="akashimg" alt="">
+    <img src="images/finalimgAkash.png" class="akashimg" alt="">
 </div>
     <div id="particles-js"></div>
 <div class="breaker"></div>
-    <img src="../images/img1final.png" class="img1" alt="">
-    <img src="../images/img2.png" class="img2" alt="">
-    <img src="../images/white.PNG" class="blank" alt="">
+    <img src="images/img1final.png" class="img1" alt="">
+    <img src="images/img2.png" class="img2" alt="">
+    <img src="images/white.PNG" class="blank" alt="">
     <div class="text">
         
     <div class="head">No matter what<br> i will succeed</div>
@@ -38,17 +38,17 @@
 
 
 </div>
-<div class="rocket"><img src="../images/rocket-launch.png" alt=""></div>
+<div class="rocket"><img src="images/rocket-launch.png" alt=""></div>
 
 
 <ul class="sci">
-    <li><a href="#"><img src="../images/facebook1.png" alt=""></a></li>
-    <li><a href="#"><img src="../images/github1.png" alt=""></a></li>
-    <li><a href="#"><img src="../images/instagram1.png" alt=""></a></li>
+    <li><a href="#"><img src="images/facebook1.png" alt=""></a></li>
+    <li><a href="#"><img src="images/github1.png" alt=""></a></li>
+    <li><a href="#"><img src="images/instagram1.png" alt=""></a></li>
 </ul>
 
-<script type="text/javascript" src="../javascripts/particles.js"></script>
-<script type="text/javascript" src="../javascripts/app.js"></script>
+<script type="text/javascript" src="javascripts/particles.js"></script>
+<script type="text/javascript" src="javascripts/app.js"></script>
 
 <script type="text/javascript">
 

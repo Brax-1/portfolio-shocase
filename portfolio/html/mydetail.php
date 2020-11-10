@@ -63,7 +63,7 @@
                             <a href="portfolio.php" class="portfolio">Portfolio</a>
                         </div>
                         <div class="intro-wrap">
-                            <a href="index.html" class="intro">Intro</a>
+                            <a href="../index.php" class="intro">Intro</a>
                         </div>
                     </div>
                 </div>
