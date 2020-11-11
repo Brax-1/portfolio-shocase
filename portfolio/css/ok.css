@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.rating{
+    display: flex;
+    transform: rotateY(180deg);
+}
+.rating input{
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+   width: 50px;
+    
+
+}
+.rating label i{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.rating label:hover i,
+.rating input:checked ~ label i
+{
+    color: rgb(66, 219, 230);
+}

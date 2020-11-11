@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Animated Login Form</title>
+	<title>Add Review</title>
 	<link rel="stylesheet" type="text/css" href="../css/skilladd.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<a href="portfolio.php"><img src="../images/previous.png" class="back" alt=""></a>
+	<a href="portfolio.php" ><img src="../images/previous.png" class="back" alt=""></a>
 
 
 	<img class="wave" src="../images/wave.png">
@@ -20,14 +20,14 @@
 		<div class="login-content">
 			<form action = 'savedata.php' method='POST'>
 				<img src="../images/skills.png">
-				<h2 class="title">Add Skill</h2>
+				<h2 class="title">Pls Review</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-chess-rook"></i>
            		   </div>
            		   <div class="div">
-           		   		<h5>Skill</h5>
-           		   		<input type="text" class="input" name= 'topic' id='topic'>
+           		   		<h5>Stars</h5>
+           		   		<input type="text" class="input" name= 'star' id='star' required>
            		   </div>
 				   </div>
 				   <div class="input-div one">
@@ -36,7 +36,7 @@
 					</div>
 					<div class="div">
 							<h5>Description</h5>
-							<input type="text" class="input" name= 'desc' id='desc'>
+							<input type="text" class="input" name= 'desc' id='desc' required>
 					</div>
 				 </div>
 				 <div class="input-div one">
@@ -44,8 +44,8 @@
 							<i class="far fa-address-book"></i>
 					</div>
 					<div class="div">
-							<h5>Image Location</h5>
-							<input type="text" class="input" name= 'img' id='img'>
+							<h5>Kind Name</h5>
+							<input type="text" class="input" name= 'name' id='name' required>
 					</div>
 				 </div>
            		
@@ -53,6 +53,7 @@
             </form>
         </div>
     </div>
-    <script type="text/javascript" src="../javascripts/skilladd.js"></script>
+	<script type="text/javascript" src="../javascripts/skilladd.js"></script>
+	
 </body>
 </html>

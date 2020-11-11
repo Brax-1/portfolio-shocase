@@ -33,6 +33,35 @@ html{
     transform: rotateZ(360deg);
   }
 }
+
+.reviewRate {
+  position: fixed;
+  z-index: 100;
+  color: white;
+  font-size: 20px;
+  top: 20%;
+  left: 0;
+  background: var(--primary);
+  padding: 5px 40px;
+  transform: rotateZ(90deg) translatey(170%);
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-family: "Acme", sans-serif;
+}
+.reviewRate:hover{
+  background: rgb(162, 0, 255);
+}
+
+.reviewRate .add img {
+  width: 20px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.reviewRate .add:hover img{
+  transform: scale(1.05);
+}
+
 .hamb{
   position: fixed;
   z-index: 2000;
@@ -258,9 +287,7 @@ html{
   color: white;
   transform: scale(0.95);
 }
-/* -------------------------------Breaker----------------------------- */
-
-/* -------------------------------End Breaker----------------------------- */
+/* -------------------------------till here intialial things like preloader hamberger etc----------------------------- */
 
 /* ===================================================================================================== */
 
@@ -567,17 +594,7 @@ section.services .remove:hover img{
   transform: scale(1.05);
 }
 
-section.services .add{
-  position: absolute;
-  right: 20px;
-}
-section.services .add img{
-  width: 50px;
-  transition: 0.3s;
-}
-section.services .add:hover img{
-  transform: scale(1.05);
-}
+
 section.services {
   background: var(--light);
 
@@ -644,135 +661,9 @@ section.services .card:before {
 
 /* ===================================================================================================== */
 
-/* -------------------------------Languages----------------------------- */
-
-.languages {
-  width: 100%;
-  justify-content: center;
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
-}
-.main {
-  position: relative;
-  width: 1090px;
-  display: flex;
-  font-family: "Acme", sans-serif;
-
-  z-index: 1;
-  flex-direction: column;
-}
-.main .text {
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  text-align: center;
-  font-size: 30px;
-  margin-top: -60px;
-}
-.main .text span {
-  color: var(--primary);
-}
-.languages .container {
-  box-shadow: 0 0 10px grey;
-  transform: translateX(-3%);
-  width: 1500px;
-  display: flex;
-  font-family: "Acme", sans-serif;
-  background: white;
-  justify-content: center;
-  z-index: 1;
-}
-.languages .container .box {
-  position: relative;
-  width: 375px;
-  height: 225px;
-  overflow: hidden;
-  margin: 10px 5px;
-  transition: 0.5s;
-}
-.languages .container .box:hover {
-  z-index: 1;
-  transform: scale(1.15);
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-}
-.languages .container .box .imgBx {
-  position: absolute;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.languages .container .box .imgBx:before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: linear-gradient(45deg, #ff00ea, #581df8);
-  mix-blend-mode: multiply;
-  opacity: 0;
-  transition: 0.5s;
-}
-.languages .container .box:hover .imgBx:before {
-  opacity: 1;
-}
-.languages .container .box .imgBx img {
-  position: absolute;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.languages .container .box .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  padding: 20px;
-  align-items: flex-end;
-}
-
-.languages .container .box .content h2 {
-  color: white;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 20px;
-  transform: translateY(200px);
-}
-
-.languages .container .box:hover .content h2 {
-  transform: translateY(0);
-  transition-delay: 0.6s;
-}
-
-.languages .container .box .content p {
-  color: white;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 10px;
-  transform: translateY(200px);
-}
-
-.languages .container .box:hover .content p {
-  transform: translateY(0);
-  transition-delay: 0.6s;
-}
-
-/* -------------------------------End languages----------------------------- */
-
 /* ===================================================================================================== */
 
-/* -------------------------------Free Lancer----------------------------- */
+/* -------------------------------Free Lancer thought----------------------------- */
 
 .freelancer button {
   font-family: "Acme", sans-serif;
@@ -1032,7 +923,7 @@ section.personalsummmary .text {
   padding-top: 25px;
   margin-top: 0px;
   padding-bottom: 30px;
-  margin-bottom: 10px;
+
 }
 
 .myprojectdetail .undermyprojectdetail {
@@ -1148,6 +1039,49 @@ section.personalsummmary .text {
 
 /* -------------------------------End Project----------------------------- */
 
+/* ===================================================================================================== */
+/* -------------------------------Problem solving----------------------------- */
+section.counter-wrapper{
+  width: 100%;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  color: rgb(114, 114, 114);
+
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  background: linear-gradient(rgb(22, 22, 22),rgb(37, 37, 37));
+}
+section.counter-wrapper > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.counter-wrapper > div i{
+  font-size: 42px;
+  margin-right: 20px;
+}
+section.counter-wrapper > div h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+section.counter-wrapper > div h5{
+  font-weight: 500;
+
+}
+section.counter-wrapper > div:nth-child(1){
+  transform: translateX(-5%);
+}
+section.counter-wrapper > div:nth-child(1) i{
+  color: rgb(0, 255, 21);
+}
+section.counter-wrapper > div:nth-child(2) i{
+  color: rgb(253, 249, 6);
+}
+section.counter-wrapper > div:nth-child(3) i{
+  color: rgb(255, 0, 34);
+}
+/* -------------------------------End Problem solving----------------------------- */
 /* ===================================================================================================== */
 
 /* -------------------------------Education Qualification----------------------------- */
@@ -1572,6 +1506,17 @@ section.contact .input-wrap-2 {
   position: absolute;
  
   left: -20%;
+}
+section.counter-wrapper {
+  padding: 20px 0;
+  grid-template-columns: repeat(1,1fr);
+  
+}
+section.counter-wrapper > div:nth-child(1){
+  transform: translateX(0%);
+}
+section.counter-wrapper > div{
+  margin-bottom: 20px;
 }
 }
 @media (max-width: 600px){

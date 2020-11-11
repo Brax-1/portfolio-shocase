@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap" rel="stylesheet">
@@ -21,9 +21,13 @@
 
 </head>
 
-<body>
+<body onload="loaders()">
 
+    <div onclick="toggleSA()" class="reviewRate">Rate
+        <div class="add"> <img src="../images/add.png" alt=""></div>
+    </div>
 
+    <div id="loader"></div>
     <div class="breaker"></div>
     <a href="#" class="backtop">
         <img src="../images/screw.png" class="screw" alt="">
@@ -50,7 +54,7 @@
             <a href="#skill">Skills</a>
             <a href="#project">Projects</a>
             <a href="#edu">Education</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">Contact</a>
         </div>
 
 
@@ -79,7 +83,7 @@
                         <a href="#skill">Skills</a>
                         <a href="#project">Projects</a>
                         <a href="#edu">Education</a>
-                        <a href="#contact">Contact Us</a>
+                        <a href="#contact">Contact</a>
                     </div>
 
                 </div>
@@ -104,11 +108,14 @@
                 <div class="righ flex-1 ">
 
                     <h1>No matter what<br><span> i will succeed</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis ab perferendis tempore aut
-                        omnis
+                    <p>Success is not final; failure is not fatal it is the courage to continue that counts
                     </p>
                     <div>
-                        <button>Download CV</button>
+
+
+                        <!-- -----------------------------------------------------download sample cv pdf----------------------------------- -->
+
+                        <a href="cv.html"> <button>Download CV</button></a>
                     </div>
                 </div>
             </div>
@@ -192,8 +199,8 @@
 
 
     <section id="skill" class="services">
-        <div class="add"> <a href="skilladd.php"> <img src="../images/add.png" alt=""></a> </div>
-        <div class="remove"> <a href="skilldelete.php"> <img src="../images/remove.png" alt=""></a></div>
+
+
 
         <div class="container">
 
@@ -202,7 +209,7 @@
 
             <div class="card-wrapper">
 
-            <?php while($res = mysqli_fetch_assoc($result)){ ?>
+                <?php while($res = mysqli_fetch_assoc($result)){ ?>
                 <div class="overcard">
                     <div class="card">
                         <img src="<?php echo $res['image'];?>" alt="">
@@ -214,7 +221,7 @@
                 <?php
                     }
                 ?>
-             
+
 
 
 
@@ -240,7 +247,17 @@
     <section class="freelancer">
         <h1>curious to learn and create</h1>
         <p>We provide high standard clean website for your bussiness solutions.</p>
-        <button>Download CV</button>
+
+
+
+
+        <!-- -----------------------------------------down load sample cv pdf------------------------------------- -->
+
+
+
+
+
+        <a href="cv.html"> <button>Download CV</button></a>
     </section>
 
     <!-- 
@@ -289,7 +306,7 @@
     -->
 
 
-
+    <!-- -----------------------------web pages that is being redirected in this section is random not made by me----------------------------- -->
 
     <section id="project" class="myprojectdetail">
 
@@ -321,11 +338,12 @@
                                         <p>Developed in Unreal engine for fun and enjoyment. </p>
                                         <div class="button">
                                             <div class="btn">
-                                                <button>Get Link</button>
+                                                <a href="hbub.html"> <button>Get Link</button></a>
 
                                             </div>
                                             <div class="btn">
-                                                <button>Webpage</button>
+                                                <a href="https://www.jetphotos.com/registration/D-HBUB">
+                                                    <button>Webpage</button> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -358,11 +376,11 @@
                                         <p>Something new creative from old , As Old is Gold.</p>
                                         <div class="button">
                                             <div class="btn">
-                                                <button>Get Link</button>
+                                                <a href="mario.html"> <button>Get Link</button></a>
 
                                             </div>
                                             <div class="btn">
-                                                <button>Webpage</button>
+                                                <a href="http://www.mariodice.com/home"> <button>Webpage</button> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -397,11 +415,11 @@
                                         <p>Every thing starts from scratch and any applicaton breaks to code.</p>
                                         <div class="button">
                                             <div class="btn">
-                                                <button>Get Link</button>
+                                                <a href="tic.html"> <button>Get Link</button></a>
 
                                             </div>
                                             <div class="btn">
-                                                <button>Webpage</button>
+                                                <a href="https://playtictactoe.org/"> <button>Webpage</button> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -436,11 +454,12 @@
                                 <p>Developed in Unreal engine for fun and enjoyment. </p>
                                 <div class="button">
                                     <div class="btn">
-                                        <button>Get Link</button>
+                                        <a href="hbub.html"> <button>Get Link</button></a>
 
                                     </div>
                                     <div class="btn">
-                                        <button>Webpage</button>
+                                        <a href="https://www.jetphotos.com/registration/D-HBUB">
+                                            <button>Webpage</button> </a>
                                     </div>
                                 </div>
                             </div>
@@ -462,11 +481,11 @@
                                 <p>Something new creative from old , As Old is Gold.</p>
                                 <div class="button">
                                     <div class="btn">
-                                        <button>Get Link</button>
+                                        <a href="mario.html"> <button>Get Link</button></a>
 
                                     </div>
                                     <div class="btn">
-                                        <button>Webpage</button>
+                                        <a href="http://www.mariodice.com/home"> <button>Webpage</button> </a>
                                     </div>
                                 </div>
                             </div>
@@ -488,11 +507,11 @@
                                 <p>Every thing starts from scratch and any applicaton breaks to code.</p>
                                 <div class="button">
                                     <div class="btn">
-                                        <button>Get Link</button>
+                                        <a href="tic.html"> <button>Get Link</button></a>
 
                                     </div>
                                     <div class="btn">
-                                        <button>Webpage</button>
+                                        <a href="https://playtictactoe.org/"> <button>Webpage</button> </a>
                                     </div>
                                 </div>
                             </div>
@@ -526,9 +545,31 @@
 
                 <i class='fab fa-hackerrank'></i>
             </div>
+            <div>
+                <h3><span class="counter" data-count="2700">2700</span>+</h3>
+                <h5>Hackerrank</h5>
+            </div>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+            <div>
+
+                <i class='fab fa-cotton-bureau'></i>
+            </div>
+            <div>
+                <h3><span class="counter" data-count="2200">2200</span>+</h3>
+                <h5>Codeforces</h5>
+            </div>
+        </div>
+        <div>
+            <div>
+
+                <i class='fab fa-docker'></i>
+            </div>
+            <div>
+                <h3><span class="counter" data-count="500">500</span>K+</h3>
+                <h5>Reviews</h5>
+            </div>
+        </div>
     </section>
 
 
@@ -563,7 +604,13 @@
                         </div>
 
                         <div class="more">
-                            <a href="#">Get Link</a>
+
+
+
+                            <!-- ------------------------------------------------dwonload sample pdf through link given in here---------------------- -->
+
+
+                            <a href="10th.html">Get Link</a>
                         </div>
                     </div>
                     <div class="card">
@@ -575,7 +622,7 @@
 
 
                         <div class="more">
-                            <a href="#">Get Link</a>
+                            <a href="12th.html">Get Link</a>
                         </div>
                     </div>
                     <div class="card">
@@ -586,7 +633,7 @@
                         </div>
 
                         <div class="more">
-                            <a href="#">Get Link</a>
+                            <a href="college.html">Get Link</a>
                         </div>
                     </div>
                 </div>
@@ -737,26 +784,83 @@
 
 
     <script type="text/javascript" src="../javascripts/script.js"></script>
+    <script>
+        var preloader = document.getElementById("loader");
 
-
+        setTimeout(function loaders() {
+            preloader.style.display = "none";
+        }, 3000)
+    </script>
     <script>
         function toggle() {
             const breaker = document.querySelector('.breaker');
             breaker.classList.toggle('active')
             const hamnavi = document.querySelector('.hamnavi');
             hamnavi.classList.toggle('active')
+        };
+
+        function toggleSA() {
+            const breaker = document.querySelector('.breaker');
+            breaker.classList.toggle('active')
+            setTimeout(() => {
+                window.location.replace("reviewadd.php");
+
+            }, 2000);
 
         };
 
-        var preloader = document.getElementById("loader");
 
-        setTimeout(function loaders() {
-            preloader.style.display = "none";
-        }, 4000
-        )
+
+
+
+
+
 
 
     </script>
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        function runCounter(){
+            counters.forEach(counter => {
+                counter.innerText = 0;
+                let target = +counter.dataset.count;
+                let step = target/100;
+                let countIt = function () {
+                    let displayedCount = +counter.innerText;
+                    if(displayedCount < target){
+                        counter.innerText =Math.ceil(displayedCount + step);
+                        setTimeout(countIt,10);
+                        
+                    }
+                    else{
+                        counter.innerText = target;
+                    }
+                }
+                countIt();
+
+            });
+        }
+    
+        let countersection = document.querySelector('.counter-wrapper');
+        let options = {
+            rootMargin:'0px 0px -100px 0px '
+        }
+        const sectionobserver = new IntersectionObserver(function(entries){
+            if(entries[0].isIntersecting){
+                runCounter();
+
+
+            }
+
+        }, options)
+        sectionobserver.observe(countersection);
+    </script>
+    <script>
+
+
+    </script>
+
 
     <script>
         const img1 = document.querySelector(".teamdetCon .container1 .wrapper img");
