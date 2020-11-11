@@ -692,7 +692,7 @@
             </div>
             <div class="input-wrap-2">
                 <input type="text" placeholder="Your Subject..." name= 'desc' id='desc' required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." name= 'mess' id='mess' required></textarea>
+                <textarea cols="30" rows="10" placeholder="Your Message..." name= 'mess' id='mess' required></textarea>
             </div>
             <div>
                 <button>Send Message</button>
