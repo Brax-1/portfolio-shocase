@@ -685,14 +685,14 @@
 
         </div>
 
-        <form action="">
+        <form action = 'savecontacts.php' method='POST'>
             <div class="input-wrap">
-                <input type="text" placeholder="Your name *" required>
-                <input type="email" placeholder="Your Email *" required>
+                <input type="text" placeholder="Your name *" name= 'name' id='name' required>
+                <input type="email" placeholder="Your Email *" name= 'email' id='email' required>
             </div>
             <div class="input-wrap-2">
-                <input type="text" placeholder="Your Subject..." required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." required></textarea>
+                <input type="text" placeholder="Your Subject..." name= 'desc' id='desc' required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." name= 'mess' id='mess' required></textarea>
             </div>
             <div>
                 <button>Send Message</button>
