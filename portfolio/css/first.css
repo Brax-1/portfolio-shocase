@@ -93,7 +93,9 @@ header {
 
 .button {
   width: 100%;
+  cursor: pointer;
 }
+
 
 .head {
   color: white;
@@ -121,12 +123,14 @@ header {
   letter-spacing: 4px;
   background: white;
   color: black;
+  cursor: pointer;
 }
 .toggle1:hover {
   letter-spacing: 4px;
   background: rgb(255, 255, 255);
   border: 2px solid white;
   color: black;
+  cursor: pointer;
 }
 .toggle1 {
   background-color: rgb(0, 132, 255);

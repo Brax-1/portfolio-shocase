@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/first.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
-<body onload="loaders()">
-
-<div id="loader"></div>
+<body>
     <header>
-        <a href="#" class="logo">Portfolio</a>
+        <a class="logo">Portfolio</a>
 
     </header>
     <div class="imgak">
@@ -27,8 +25,8 @@
         
     <div class="head">No matter what<br> i will succeed</div>
     <div class="buttons">
-    <a href="#" class="toggle" onclick="toggle();">Let's Go</a>
-    <a href="#" class="toggle1" onclick="toggle1()">Get in Touch</a>
+    <a class="toggle" onclick="toggle();">Let's Go</a>
+    <a class="toggle1" onclick="toggle1();">Get in Touch</a>
 </div>
 </div>
 <div class="pulse">
@@ -49,17 +47,11 @@
     <li><a href="#"><img src="images/instagram1.png" alt=""></a></li>
 </ul>
 
-
-
-
 <script type="text/javascript" src="javascripts/particles.js"></script>
 <script type="text/javascript" src="javascripts/app.js"></script>
 
 <script type="text/javascript">
-var preloader = document.getElementById("loader");
-    setTimeout(function loaders() {
-            preloader.style.display = "none";
-        }, 3000)
+
 
     function toggle() {
 
@@ -71,8 +63,6 @@ var preloader = document.getElementById("loader");
         const breaker = document.querySelector('.breaker');
         const rocket = document.querySelector('.rocket');
         const pulse = document.querySelector('.pulse');
-        const displaywhole = document.querySelector('.displaywhole');
-        const body = document.querySelector('.bod');
         imgak.classList.toggle('active')
         text.classList.toggle('active')
         sci.classList.toggle('active')
@@ -80,15 +70,13 @@ var preloader = document.getElementById("loader");
         rocket.classList.toggle('active')
         pulse.classList.toggle('active')
         breaker.classList.toggle('active')
-        
         setTimeout(() => {
-            displaywhole.classList.toggle('active')
-            body.classList.toggle('active')
-            window.location.replace("html/portfolio.php");
+                        window.location.replace("html/portfolio.php");
 
-                    }, 3000);
+                    }, 2400);
 
     };
+
     function toggle1() {
 
 
@@ -109,9 +97,11 @@ breaker.classList.toggle('active')
 setTimeout(() => {
                 window.location.replace("html/mydetail.php");
 
-            }, 3000);
+            }, 2400);
 
 };
+
+
     setTimeout(
             function toggle() {
 
@@ -130,13 +120,12 @@ setTimeout(() => {
         pulse.classList.toggle('active')
         breaker.classList.toggle('active')
         setTimeout(() => {
-                        window.location.replace("html/portfolio.php");
+                        window.location.replace("portfolio.php");
 
                     }, 3000);
             }, 30000);
-            var preloader = document.getElementById("loader");
 
-        
+
 
 </script>
 
