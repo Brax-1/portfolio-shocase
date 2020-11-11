@@ -102,29 +102,6 @@ setTimeout(() => {
 };
 
 
-    setTimeout(
-            function toggle() {
-
-                const imgak = document.querySelector('.imgak');
-        const text = document.querySelector('.text');
-        const sci = document.querySelector('.sci');
-        const logo = document.querySelector('.logo');
-        const breaker = document.querySelector('.breaker');
-        const rocket = document.querySelector('.rocket');
-        const pulse = document.querySelector('.pulse');
-        imgak.classList.toggle('active')
-        text.classList.toggle('active')
-        sci.classList.toggle('active')
-        logo.classList.toggle('active')
-        rocket.classList.toggle('active')
-        pulse.classList.toggle('active')
-        breaker.classList.toggle('active')
-        setTimeout(() => {
-                        window.location.replace("portfolio.php");
-
-                    }, 3000);
-            }, 30000);
-
 
 
 </script>
