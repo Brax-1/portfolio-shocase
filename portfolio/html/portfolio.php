@@ -718,8 +718,7 @@
                 <h2>About <spa>Me</spa>
                 </h2>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam repellendus suscipit
-                        consequuntur veniam at dolorum asperiores eaque facilis.</p>
+                    <p>Neither train nor plane, neither GPS nor human caress can take you to the address of happiness</p>
                     <div class="social">
                         <a href="#"><span class="fab fa-facebook-f"></span></a>
                         <a href="#"><span class="fab fa-instagram"></span></a>
