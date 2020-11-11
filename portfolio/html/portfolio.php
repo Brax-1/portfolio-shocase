@@ -238,6 +238,54 @@
 
         /* ===================================================================================================== */
 
+
+           /* -------------------------------Problem-solving----------------------------- */
+    
+    
+    -->
+
+
+
+
+    <section class="counter-wrapper">
+        <div>
+            <div>
+
+                <i class='fab fa-hackerrank'></i>
+            </div>
+            <div>
+                <h3><span class="counter" data-count="2700">2700</span>+</h3>
+                <h5>Hackerrank</h5>
+            </div>
+        </div>
+        <div>
+            <div>
+
+                <i class='fab fa-cotton-bureau'></i>
+            </div>
+            <div>
+                <h3><span class="counter" data-count="2200">2200</span>+</h3>
+                <h5>Codeforces</h5>
+            </div>
+        </div>
+        <div>
+            <div>
+
+                <i class='fab fa-docker'></i>
+            </div>
+            <div>
+                <h3><span class="counter" data-count="500">500</span>K+</h3>
+                <h5>Reviews</h5>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 
+        /* -------------------------------End Problem-solving----------------------------- */
+
+
         
         /* -------------------------------Free Lancer----------------------------- */
     
@@ -531,52 +579,7 @@
 
         /* ===================================================================================================== */
         
-        /* -------------------------------Problem-solving----------------------------- */
-    
-    
-    -->
-
-
-
-
-    <section class="counter-wrapper">
-        <div>
-            <div>
-
-                <i class='fab fa-hackerrank'></i>
-            </div>
-            <div>
-                <h3><span class="counter" data-count="2700">2700</span>+</h3>
-                <h5>Hackerrank</h5>
-            </div>
-        </div>
-        <div>
-            <div>
-
-                <i class='fab fa-cotton-bureau'></i>
-            </div>
-            <div>
-                <h3><span class="counter" data-count="2200">2200</span>+</h3>
-                <h5>Codeforces</h5>
-            </div>
-        </div>
-        <div>
-            <div>
-
-                <i class='fab fa-docker'></i>
-            </div>
-            <div>
-                <h3><span class="counter" data-count="500">500</span>K+</h3>
-                <h5>Reviews</h5>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- 
-        /* -------------------------------End Problem-solving----------------------------- */
-
+     
 
         /* ===================================================================================================== */
         

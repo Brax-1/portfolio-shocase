@@ -923,6 +923,7 @@ section.personalsummmary .text {
   padding-top: 25px;
   margin-top: 0px;
   padding-bottom: 30px;
+  margin-bottom: 10px;
 
 }
 
@@ -1049,7 +1050,7 @@ section.counter-wrapper{
   color: rgb(114, 114, 114);
 
   font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background: linear-gradient(rgb(22, 22, 22),rgb(37, 37, 37));
 }
 section.counter-wrapper > div{

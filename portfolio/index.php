@@ -59,7 +59,7 @@
 var preloader = document.getElementById("loader");
     setTimeout(function loaders() {
             preloader.style.display = "none";
-        }, 0)
+        }, 3000)
 
     function toggle() {
 
