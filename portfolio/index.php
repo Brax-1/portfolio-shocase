@@ -26,7 +26,7 @@
     <div class="head">No matter what<br> i will succeed</div>
     <div class="buttons">
     <a class="toggle" onclick="toggle();">Let's Go</a>
-    <a class="toggle1" onclick="toggle1();">Get in Touch</a>
+    <a class="toggle1" onclick="toggle1();">About Me</a>
 </div>
 </div>
 <div class="pulse">

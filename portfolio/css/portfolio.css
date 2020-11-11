@@ -43,7 +43,7 @@ html{
   left: 0;
   background: var(--primary);
   padding: 5px 40px;
-  transform: rotateZ(90deg) translatey(170%);
+  transform: rotateZ(90deg) translatey(150%);
   display: flex;
   border-radius: 10px;
   transition: 0.3s;
@@ -57,6 +57,7 @@ html{
   width: 20px;
   margin-left: 10px;
   transition: 0.3s;
+  margin-top: -15px;
 }
 .reviewRate .add:hover img{
   transform: scale(1.05);
@@ -453,6 +454,7 @@ header nav .branding img {
   color: var(--primary);
   margin-top: 60px;
   font-size: 35px;
+  font-weight: 800;
   margin-bottom: 20px;
 }
 .abouttext p {
@@ -564,8 +566,9 @@ header nav .branding img {
   color: var(--secondary);
   text-align: center;
   margin-bottom: 1rem;
-
   line-height: 0.5;
+  font-size: 30px;
+  font-weight: 800;
   font-family: "Poppins", sans-serif;
 }
 .section-heading span {
@@ -1019,7 +1022,7 @@ section.personalsummmary .text {
   flex-direction: row;
 }
 .project .button .btn {
-  height: 30px;
+  height: 40px;
   width: 100%;
   margin: 0 5px;
 }
@@ -1242,7 +1245,12 @@ section.contact form textarea {
   margin: 10px;
   padding: 5px;
 }
-
+.correctsend{
+  width: 100%; height: 100vh; background: black; display: none; justify-content: center; position: fixed; z-index: 10000;
+}
+.send.active .correctsend{
+  display: block;
+}
 /* -------------------------------End Contact Us----------------------------- */
 /* ===================================================================================================== */
 
@@ -1359,6 +1367,19 @@ footer .center .fa-envelope-open-o {
   section.education .quote {
     font-size: 35px; 
   }
+  .edu .review .container .teamscard {
+    flex-direction: column;
+        background: var(--light);
+    align-items: center;
+  
+  }
+  .edu .review .container .teamscard .card {
+    width: 50%;
+  }
+  .edu {
+    margin-top: 50px;
+}
+
 }
 
 @media (max-width: 1000px) {

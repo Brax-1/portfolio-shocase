@@ -44,7 +44,7 @@
 							<i class="far fa-address-book"></i>
 					</div>
 					<div class="div">
-							<h5>Kind Name</h5>
+							<h5>Good Name</h5>
 							<input type="text" class="input" name= 'name' id='name' required>
 					</div>
 				 </div>

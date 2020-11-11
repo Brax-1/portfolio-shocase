@@ -12,16 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Poppins&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/portfolio.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="../css/lightslider.css">
     <script type="text/javascript" src="../javascripts/JQuery3.3.1.js"></script>
     <script type="text/javascript" src="../javascripts/lightslider.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+
 
 
 </head>
 
 <body onload="loaders()">
+
+
+    
 
     <div onclick="toggleSA()" class="reviewRate">Rate
         <div class="add"> <img src="../images/add.png" alt=""></div>
@@ -115,7 +120,7 @@
 
                         <!-- -----------------------------------------------------download sample cv pdf----------------------------------- -->
 
-                        <a href="cv.html"> <button>Download CV</button></a>
+                        <a  onclick="cv()"> <button>Download CV</button></a>
                     </div>
                 </div>
             </div>
@@ -305,7 +310,7 @@
 
 
 
-        <a href="cv.html"> <button>Download CV</button></a>
+        <a href="cv()"> <button>Download CV</button></a>
     </section>
 
     <!-- 
@@ -363,123 +368,135 @@
         <div class="undermyprojectdetail">Think , Explore and Create </div>
 
         <div class="teamdetCon">
-            <ul id="autoWidth" class="cs-hidden teamsdet">
-
-                <!------------------------------------------------------ -->
-                <li class="item-a">
-
-                    <section id="project" class="myprojectdetail">
-                        <div class="project">
-
-                            <div class="container">
-                                <div class="container1">
-                                    <div class="wrapper">
-                                        <a>
-                                            <img onclick="imgt1()" class="1" src="../images/back1.png" alt="">
-                                        </a>
-
-                                        <div class="title">HBUB</div>
-                                        <div class="place">( Helion Beast Unkown Battleground )</div>
-
-                                    </div>
-                                    <div class="content">
-                                        <p>Developed in Unreal engine for fun and enjoyment. </p>
-                                        <div class="button">
-                                            <div class="btn">
-                                                <a href="hbub.html"> <button>Get Link</button></a>
-
+            <div class="crous" style="z-index: 10000;">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        
+                        <section id="project" class="myprojectdetail">
+                            <div class="project">
+            
+                                <div class="container">
+                                    <div class="container1">
+                                        <div class="wrapper">
+                                            <a>
+                                                <img onclick="imgt12()" class="4" src="../images/back1.png" alt="">
+                                            </a>
+            
+                                            <div class="title">HBUB</div>
+                                            <div class="place">( Helion Beast Unkown Battleground )</div>
+            
+                                        </div>
+                                        <div class="content">
+                                            <p>Developed in Unreal engine for fun and enjoyment. </p>
+                                            <div class="button">
+                                                <div class="btn">
+                                                    <a onclick="hbubf()"> <button>Get Link</button></a>
+            
+                                                </div>
+                                                <div class="btn">
+                                                    <a href="https://www.jetphotos.com/registration/D-HBUB">
+                                                        <button>Webpage</button> </a>
+                                                </div>
                                             </div>
-                                            <div class="btn">
-                                                <a href="https://www.jetphotos.com/registration/D-HBUB">
-                                                    <button>Webpage</button> </a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                
+                            </div>
+                        </section>
+            
+            
+                      </div>
+                      <div class="carousel-item">
+                        
+                        <section id="project" class="myprojectdetail">
+                            <div class="project">
+            
+                          
+            
+                                <div class="container">
+                                    <div class="container2">
+                                        <div class="wrapper">
+                                            <a>
+                                                <img class="5" onclick="imgt22()" src="../images/mario.PNG" alt="">
+                                            </a>
+            
+                                            <div class="title">DICE MARIO</div>
+                                            <div class="place">( Pygame Module developed )</div>
+            
+                                        </div>
+                                        <div class="content">
+                                            <p>Something new creative from old , As Old is Gold.</p>
+                                            <div class="button">
+                                                <div class="btn">
+                                                    <a onclick="mariof()"> <button>Get Link</button></a>
+            
+                                                </div>
+                                                <div class="btn">
+                                                    <a href="http://www.mariodice.com/home"> <button>Webpage</button> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                             
+                            </div>
+                        </section>
+            
+                      </div>
+                      <div class="carousel-item">
+                        <section id="project" class="myprojectdetail">
+                            <div class="project">
+            
+            
+                              
+                                <div class="container">
+                                    <div class="container3">
+                                        <div class="wrapper">
+                                            <a>
+                                                <img onclick="imgt32()" class="6" src="../images/tic.png" alt="">
+                                            </a>
+            
+                                            <div class="title">Tic-Tac-Toe</div>
+                                            <div class="place">( Simple Python Algorithm )</div>
+            
+                                        </div>
+                                        <div class="content">
+                                            <p>Every thing starts from scratch and any applicaton breaks to code.</p>
+                                            <div class="button">
+                                                <div class="btn">
+                                                    <a onclick="ticf()"> <button>Get Link</button></a>
+            
+                                                </div>
+                                                <div class="btn">
+                                                    <a href="https://playtictactoe.org/"> <button>Webpage</button> </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
-                        </div>
-                    </section>
-                </li>
-
-                <!------------------------------------------------------ -->
-                <li class="item-b">
-
-                    <section id="project" class="myprojectdetail">
-                        <div class="project">
-
-                            <div class="container">
-                                <div class="container2">
-                                    <div class="wrapper">
-                                        <a>
-                                            <img class="2" onclick="imgt2()" src="../images/mario.PNG" alt="">
-                                        </a>
-
-                                        <div class="title">DICE MARIO</div>
-                                        <div class="place">( Pygame Module developed )</div>
-
-                                    </div>
-                                    <div class="content">
-                                        <p>Something new creative from old , As Old is Gold.</p>
-                                        <div class="button">
-                                            <div class="btn">
-                                                <a href="mario.html"> <button>Get Link</button></a>
-
-                                            </div>
-                                            <div class="btn">
-                                                <a href="http://www.mariodice.com/home"> <button>Webpage</button> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </section>
-                </li>
-
-                <!------------------------------------------------------ -->
-                <li class="item-c">
-
-                    <section id="project" class="myprojectdetail">
-                        <div class="project">
-
-
-
-                            <div class="container">
-                                <div class="container3">
-                                    <div class="wrapper">
-                                        <a>
-                                            <img onclick="imgt3()" class="3" src="../images/tic.png" alt="">
-                                        </a>
-
-                                        <div class="title">Tic-Tac-Toe</div>
-                                        <div class="place">( Simple Python Algorithm )</div>
-
-                                    </div>
-                                    <div class="content">
-                                        <p>Every thing starts from scratch and any applicaton breaks to code.</p>
-                                        <div class="button">
-                                            <div class="btn">
-                                                <a href="tic.html"> <button>Get Link</button></a>
-
-                                            </div>
-                                            <div class="btn">
-                                                <a href="https://playtictactoe.org/"> <button>Webpage</button> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </li>
-                <!------------------------------------------------------ -->
-
-
-            </ul>
+                        </section>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
         </div>
 
         <div class="gret900">
@@ -502,7 +519,7 @@
                                 <p>Developed in Unreal engine for fun and enjoyment. </p>
                                 <div class="button">
                                     <div class="btn">
-                                        <a href="hbub.html"> <button>Get Link</button></a>
+                                        <a onclick="hbubf()"> <button>Get Link</button></a>
 
                                     </div>
                                     <div class="btn">
@@ -529,7 +546,7 @@
                                 <p>Something new creative from old , As Old is Gold.</p>
                                 <div class="button">
                                     <div class="btn">
-                                        <a href="mario.html"> <button>Get Link</button></a>
+                                        <a onclick="mariof()"> <button>Get Link</button></a>
 
                                     </div>
                                     <div class="btn">
@@ -555,7 +572,7 @@
                                 <p>Every thing starts from scratch and any applicaton breaks to code.</p>
                                 <div class="button">
                                     <div class="btn">
-                                        <a href="tic.html"> <button>Get Link</button></a>
+                                        <a onclick="ticf()"> <button>Get Link</button></a>
 
                                     </div>
                                     <div class="btn">
@@ -613,7 +630,7 @@
                             <!-- ------------------------------------------------dwonload sample pdf through link given in here---------------------- -->
 
 
-                            <a href="10th.html">Get Link</a>
+                            <a onclick="tenth()">Get Link</a>
                         </div>
                     </div>
                     <div class="card">
@@ -625,7 +642,7 @@
 
 
                         <div class="more">
-                            <a href="12th.html">Get Link</a>
+                            <a href="twelth()">Get Link</a>
                         </div>
                     </div>
                     <div class="card">
@@ -636,7 +653,7 @@
                         </div>
 
                         <div class="more">
-                            <a href="college.html">Get Link</a>
+                            <a onclick="coll()">Get Link</a>
                         </div>
                     </div>
                 </div>
@@ -644,6 +661,7 @@
             </div>
         </section>
     </div>
+
 
 
     <!-- 
@@ -684,7 +702,9 @@
 
 
         </div>
-
+        <div class="correctsend" >
+            <embed src="../images/Check.gif"  ></embed>
+            </div>
         <form action = 'savecontacts.php' method='POST'>
             <div class="input-wrap">
                 <input type="text" placeholder="Your name *" name= 'name' id='name' required>
@@ -695,7 +715,7 @@
                 <textarea cols="30" rows="10" placeholder="Your Message..." name= 'mess' id='mess' required></textarea>
             </div>
             <div>
-                <button>Send Message</button>
+                 <button class="send" onclick="contact()" >Send Message</button>
             </div>
         </form>
 
@@ -760,7 +780,7 @@
                             <div class="text">Message *</div>
                             <textarea name="" id="" cols="25" rows="2" required></textarea>
                         </div>
-                        <div class="btn"><button type="submit">Send</button></div>
+                        <div class="btn1"><button type="submit">Send</button></div>
                     </form>
                 </div>
             </div>
@@ -813,14 +833,47 @@
 
 
 
-
-
-
-
-
-
     </script>
 
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+
+
+    <script>
+        function cv(){
+            window.open("cv.html")
+        }
+        function hbubf(){
+            window.open("hbub.html")
+        }
+        function mariof(){
+            window.open("mario.html")
+        }
+        function ticf(){
+            window.open("tic.html")
+        }
+        function tenth(){
+            window.open("10th.html")
+        }
+        function twelth(){
+            window.open("12th.html")
+        }
+        function coll(){
+            window.open("college.html")
+        }
+    </script>
     <script>
         const counters = document.querySelectorAll('.counter');
         function runCounter(){
@@ -865,6 +918,15 @@
 
 
     <script>
+        const contacts = document.querySelector(".send");
+        function contact() {
+            contacts.classList.toggle("active")
+            setTimeout(contacts.classList.toggle("active"),3700);
+                
+            }
+      
+
+
         const img1 = document.querySelector(".teamdetCon .container1 .wrapper img");
         function imgt1() {
             img1.classList.toggle("active");
@@ -906,6 +968,7 @@
             img32.classList.toggle("active");
         }
     </script>
+    
 
 
 
