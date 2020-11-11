@@ -385,7 +385,7 @@
                                     <div class="container1">
                                         <div class="wrapper">
                                             <a>
-                                                <img onclick="imgt12()" class="4" src="../images/back1.png" alt="">
+                                                <img onclick="imgt1()" class="4" src="../images/back1.png" alt="">
                                             </a>
             
                                             <div class="title">HBUB</div>
@@ -425,7 +425,7 @@
                                     <div class="container2">
                                         <div class="wrapper">
                                             <a>
-                                                <img class="5" onclick="imgt22()" src="../images/mario.PNG" alt="">
+                                                <img class="5" onclick="imgt2()" src="../images/mario.PNG" alt="">
                                             </a>
             
                                             <div class="title">DICE MARIO</div>
@@ -462,7 +462,7 @@
                                     <div class="container3">
                                         <div class="wrapper">
                                             <a>
-                                                <img onclick="imgt32()" class="6" src="../images/tic.png" alt="">
+                                                <img onclick="imgt3()" class="6" src="../images/tic.png" alt="">
                                             </a>
             
                                             <div class="title">Tic-Tac-Toe</div>
