@@ -39,9 +39,9 @@
         <img src="../images/up.png" class="upload" alt="">
     </a>
 
-    <button onclick="toggle()" class="hamb">
+    <a onclick="toggle()" class="hamb">
         <span class="fas fa-hamburger"></span>
-    </button>
+    </a>
 
     <div class="hamnavi">
         <div class="navel">
@@ -740,10 +740,10 @@
                 <div class="content">
                     <p>Neither train nor plane, neither GPS nor human caress can take you to the address of happiness</p>
                     <div class="social">
-                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                        <a href="#"><span class="fab fa-instagram"></span></a>
-                        <a href="#"><span class="fab fa-linkedin-in"></span></a>
-                        <a href="#"><span class="fab fa-github"></span></a>
+                        <a href="https://www.facebook.com"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://www.instagram.com"><span class="fab fa-instagram"></span></a>
+                        <a href="https://www.linkedin.com/in/akash-yadav-b4a5881b4"><span class="fab fa-linkedin-in"></span></a>
+                        <a href="github.com/Brax-1"><span class="fab fa-github"></span></a>
                     </div>
                 </div>
             </div>

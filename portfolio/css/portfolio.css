@@ -70,19 +70,22 @@ html{
   width: 40px;
   height: 40px;
   right: 20px;
-  top: 20px;
+  border: 2px solid white;
+  top: 20px;    text-align: center;
   outline: none;
   border-radius: 50%;
   transition: 0.3s;
   display: none;
 }
-.hamb span{
+.hamb span {
   width: 100%;
+  margin-top: 10px;
   transition: 0.3s;
   color: #3dcfd3;
 }
 .hamb:hover{
   background: #3dcfd3;
+  border: 0px solid white;
 }
 .hamb:hover span{
   color: black;
@@ -259,12 +262,12 @@ html{
   height: 90%;
   justify-content: center;
 }
-.hamnavi .navel a{
+.hamnavi .navel a {
   font-size: 20px;
+  text-decoration: none;
   color: white;
   font-family: "Acme", sans-serif;
   transition: 0.3s;
-  
 }
 .hamnavi .navel a:hover{
   background-color: var(--primary);
@@ -1186,6 +1189,7 @@ section.contact .card-wrapper .card {
   text-align: center;
   margin-top: -20px;
   margin-bottom: 20px;
+  border: 0px;
 }
 section.contact .card-wrapper .card span {
   font-size: 30px;
