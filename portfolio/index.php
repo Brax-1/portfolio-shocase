@@ -42,9 +42,9 @@
 
 
 <ul class="sci">
-    <li><a href="#"><img src="images/facebook1.png" alt=""></a></li>
-    <li><a href="#"><img src="images/github1.png" alt=""></a></li>
-    <li><a href="#"><img src="images/instagram1.png" alt=""></a></li>
+    <li><a href="https://www.facebook.com"><img src="images/facebook1.png" alt=""></a></li>
+    <li><a href="https://www.github.com"><img src="images/github1.png" alt=""></a></li>
+    <li><a href="https://www.instagram.com"><img src="images/instagram1.png" alt=""></a></li>
 </ul>
 
 <script type="text/javascript" src="javascripts/particles.js"></script>

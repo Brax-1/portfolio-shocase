@@ -743,7 +743,7 @@
                         <a href="https://www.facebook.com"><span class="fab fa-facebook-f"></span></a>
                         <a href="https://www.instagram.com"><span class="fab fa-instagram"></span></a>
                         <a href="https://www.linkedin.com/in/akash-yadav-b4a5881b4"><span class="fab fa-linkedin-in"></span></a>
-                        <a href="github.com/Brax-1"><span class="fab fa-github"></span></a>
+                        <a href="https://www.github.com"><span class="fab fa-github"></span></a>
                     </div>
                 </div>
             </div>
