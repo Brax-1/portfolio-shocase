@@ -33,13 +33,13 @@
     </div>
 
     <div id="loader"></div>
-    <div class="breaker"></div>      //stater black fad and fade out 
-    <a href="#" class="backtop">		//button to reach to top
+    <div class="breaker"></div>     
+    <a href="#" class="backtop">		
         <img src="../images/screw.png" class="screw" alt="">
         <img src="../images/up.png" class="upload" alt="">
     </a>
 
-    <a onclick="toggle()" class="hamb">		//hamberger
+    <a onclick="toggle()" class="hamb">		
         <span class="fas fa-hamburger"></span>
     </a>
 
