@@ -45,16 +45,16 @@
                         <p class="text">Developing and maintaining a professional portfolio is an effective marketing </p>
                     </div>
                     <div class="icons-container">
-                        <a href="#" class="icon">
+                        <a href="www.facebook.com" class="icon">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#" class="icon">
+                        <a href="www.instagram.com" class="icon">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="icon">
+                        <a href="www.googleplus.com" class="icon">
                             <i class="fab fa-google-plus-g"></i>
                         </a>
-                        <a href="#" class="icon">
+                        <a href="www.twitter.com" class="icon">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
