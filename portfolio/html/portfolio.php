@@ -715,7 +715,7 @@
                 <textarea cols="30" rows="10" placeholder="Your Message..." name= 'mess' id='mess' required></textarea>
             </div>
             <div>
-                 <button class="send" onclick="contact()" >Send Message</button>
+          <button class="send" onclick="contact()">Send Message</button>
             </div>
         </form>
 
@@ -922,7 +922,6 @@
         function contact() {
             contacts.classList.toggle("active")
             setTimeout(contacts.classList.toggle("active"),3700);
-                
             }
       
 

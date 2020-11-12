@@ -592,6 +592,7 @@ section.services .remove{
   position: absolute;
   left: 20px;
 }
+
 section.services .remove img{
   width: 50px;
   transition: 0.3s;
@@ -617,7 +618,7 @@ section.services .card-wrapper {
 }
 section.services .card {
   background: var(--pure);
-
+  border: 0px;
   padding: 2.5rem 2rem;
   position: relative;
   padding-top: 6rem;
