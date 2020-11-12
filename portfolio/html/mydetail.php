@@ -51,8 +51,8 @@
                         <a href="www.instagram.com" class="icon">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="www.googleplus.com" class="icon">
-                            <i class="fab fa-google-plus-g"></i>
+                        <a href="https://www.github.com" class="icon">
+                            <i class="fab fa-github"></i>
                         </a>
                         <a href="www.twitter.com" class="icon">
                             <i class="fab fa-twitter"></i>
