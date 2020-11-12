@@ -42,7 +42,7 @@
                 <div class="left">
                     <div class="about-container">
                         <h3 class="title">About</h3>
-                        <p class="text">Lorem Ipsum is simply text of the printing and types industry.</p>
+                        <p class="text">Developing and maintaining a professional portfolio is an effective marketing </p>
                     </div>
                     <div class="icons-container">
                         <a href="#" class="icon">

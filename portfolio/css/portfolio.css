@@ -851,14 +851,7 @@ section.freelancer {
   animation-delay: 0.5s;
 }
 
-.review {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.review .container {
-  text-align: center;
-}
+
 .review .container h1 {
   color: black;
   font-family: "Poppins", sans-serif;
@@ -961,7 +954,7 @@ section.personalsummmary .text {
 .myprojectdetail .myproject span {
   color: var(--primary);
 }
-.project .container {
+.project .containerP {
   height: 450px;
   width: 350px;
   overflow: hidden;
@@ -977,7 +970,7 @@ section.personalsummmary .text {
   transition: all 0.3s ease;
 }
 
-.project .container .wrapper img {
+.project .containerP .wrapper img {
   z-index: 20;
   border-radius: 50%;
   height: 200px;
@@ -1066,7 +1059,7 @@ section.counter-wrapper > div{
 }
 section.counter-wrapper > div i{
   font-size: 42px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 section.counter-wrapper > div h3{
   font-family: "Poppins", sans-serif;
@@ -1078,6 +1071,12 @@ section.counter-wrapper > div h5{
 }
 section.counter-wrapper > div:nth-child(1){
   transform: translateX(-5%);
+}
+section.counter-wrapper > div:nth-child(3) h3{
+  transform: translateX(-16px);
+}
+section.counter-wrapper > div:nth-child(3) h5{
+  transform: translateX(-14px);
 }
 section.counter-wrapper > div:nth-child(1) i{
   color: rgb(0, 255, 21);
@@ -1116,12 +1115,17 @@ section.education .image:before {
   opacity: 1;
   transition: 0.5s;
 }
+
+.review .container {
+  text-align: center;
+  margin-top: -100px;
+}
 section.education .quote {
   font-size: 45px;
   z-index: 2;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-align: center;
@@ -1134,12 +1138,15 @@ section.education .quote span {
 }
 
 .edu {
-  margin-top: -100px;
+  background: var(--light);
 }
 
 .edu .review .container .teamscard .card {
   height: 380px;
   width: 300px;
+  
+  margin-top: -100px;
+
 }
 .edu .review .container .teamscard .header {
   width: 100%;
@@ -1373,17 +1380,27 @@ footer .center .fa-envelope-open-o {
   }
   .edu .review .container .teamscard {
     flex-direction: column;
-        background: var(--light);
+
     align-items: center;
   
   }
   .edu .review .container .teamscard .card {
-    width: 50%;
+    margin-top: 0;
+    
+    width: 500px;
+
   }
   .edu {
-    margin-top: 50px;
+    margin-top: 0px;
+    background: transparent;
 }
-
+.review .container {
+  text-align: center;
+  margin-top: -200px;
+}
+.project .containerP {
+  width: 320px;
+}
 }
 
 @media (max-width: 1000px) {
@@ -1402,6 +1419,10 @@ footer .center .fa-envelope-open-o {
   section.contact .card-wrapper {
     margin: 0 30px;
   }
+  .project .containerP {
+    width: 300px;
+}
+
 }
 @media (max-width: 908px) {
   .project .container {
@@ -1409,8 +1430,8 @@ footer .center .fa-envelope-open-o {
     margin: 5px auto;
   }
 
-.project .wrapper img.active {
-  width: 350px;
+  .project .wrapper img.active {
+    width: 300px;
 }
 
 .teamdetCon{
@@ -1429,14 +1450,17 @@ section.education .quote {
   display: none;
 
 }
+
 .edu .review .container .teamscard {
   flex-direction: column;
-      background: var(--light);
+
   align-items: center;
 
 }
 .edu .review .container .teamscard .card {
-  width: 50%;
+ 
+  width: 500px;
+
 }
 .containerA {
   position: relative;
@@ -1550,6 +1574,15 @@ section.counter-wrapper > div{
     zoom: 0.8;
    
   }
+
+
+  section.education .quote {
+      
+      top: 30%;
+   
+  }
+
+
 }
 
 
